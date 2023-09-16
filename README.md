@@ -2,6 +2,8 @@
 
 It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
 
+Suppose the pond in your backyard is beginning to decline in water quality, what would you do? The answer is unclear for most people, and that's the problem we want to solve.
+
 That's why we decided to build AquaGuard. Revolutionizing Water Quality Monitoring for a Sustainable Future
 
 Our mission is simple: to provide comprehensive water quality data to people worldwide, empowering everyone to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
@@ -77,7 +79,8 @@ OR users take a pic
 
 ## next steps: 
 - add wildlife data 
-- add natural distaster event data 
-
+- add natural distaster event data
+- train a specific model for water quality analysis based on satellite or camera imagery.
+- provide localized resources
 
 
