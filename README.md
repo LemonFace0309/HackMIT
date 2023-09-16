@@ -27,3 +27,28 @@ API to communicate (Charles & Mabel)
 LLMs w/ prompts (William)
 Business pitching (William)
 
+
+## Potential Partnerships:
+### Eco-friendly Product Manufacturers:
+Brands that produce sustainable water treatment solutions, from algaecides to bio-augmentation 
+Sound Agriculture: This company, based out of nearby Emeryville, California, focuses on sustainable agriculture solutions. They have products or technologies that can be adapted for water treatment and conservation.
+
+GreenTech Life: They offer sustainable solutions for home and garden. Their range of products includes those for water purification and eco-friendly farming. Provides access to products tailored for individual households in Boston.
+
+### Local Environmental NGOs & Agencies:
+They can provide expertise, resources, and manpower for larger projects or community initiatives. 
+
+The Charles River Watershed Association (CRWA): Organization dedicated to protecting, preserving, and enhancing the Charles River and its watershed. They conduct regular water quality monitoring and have various programs to improve water health. Partnering with CRWA can provide expertise, volunteer manpower, and credibility in the Boston community.
+
+Massachusetts Rivers Alliance: This organization advocates for the health and restoration of rivers in Massachusetts. They could be a valuable partner for statewide initiatives and can offer insights and resources to support AquaGuard's mission.
+
+### Government Agencies:
+Partnering with local, state, or federal environmental agencies can provide legitimacy, access to grants, and potential integration into larger-scale projects.
+
+Massachusetts Department of Environmental Protection (MassDEP): This state agency oversees environmental regulation in Massachusetts. By partnering with MassDEP, AquaGuard can gain access to a wealth of data, potentially apply for grants, and collaborate on larger projects aimed at water conservation and quality improvement.
+
+Boston Water and Sewer Commission (BWSC): Responsible for providing water and wastewater services to Boston residents. A partnership could provide insights into water quality metrics and help roll out community initiatives more effectively.
+
+Environmental Protection Agency (EPA) Region 1: This regional office of the EPA oversees environmental protection efforts in the New England area, including Massachusetts. Collaboration here can offer legitimacy, potential grant opportunities, and integration into federal initiatives.
+
+
