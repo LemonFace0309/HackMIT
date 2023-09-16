@@ -54,3 +54,30 @@ Boston Water and Sewer Commission (BWSC): Responsible for providing water and wa
 Environmental Protection Agency (EPA) Region 1: This regional office of the EPA oversees environmental protection efforts in the New England area, including Massachusetts. Collaboration here can offer legitimacy, potential grant opportunities, and integration into federal initiatives.
 
 
+# To edit:
+### Problem Statement:
+In today's rapidly urbanizing world, water bodies face significant threats from pollution, industrial discharge, and more. These deteriorating water qualities not only pose a direct risk to human health through waterborne diseases but also threaten aquatic wildlife. While there are tools to measure water quality and separate systems monitoring human health and wildlife conservation, there's a significant gap in holistic platforms that provide real-time insights into the implications of changing water qualities.
+
+### Novelty:
+What sets AquaGuard apart is its integrated approach. Unlike conventional systems that treat water quality, human health, and wildlife conservation as separate entities, AquaGuard brings them under one umbrella. By correlating real-time water quality with potential health risks and wildlife conservation challenges, it offers a comprehensive view of the ecosystem's state. This integrated insight is crucial for immediate, informed decision-making, providing a proactive rather than reactive solution to the challenges posed by deteriorating water conditions.
+
+### Solution: AquaGuard
+AquaGuard is an integrated AI-augmented satellite imagery system that monitors water quality in real-time, correlating this data with potential implications for both human health (like disease outbreaks) and wildlife conservation (like aquatic species distress).
+
+### How it works:
+1. users draw a polygon around a map (satellite imagery) to take a picture
+OR users take a pic
+2. we run the picture through a GPT-4 to analyze water quality
+3. we get results back with metrics, we will focus on water metrics from WHO (world health org), CDC (center for disease), 
+4. we rank the water area on a scale of 10, and also write down what the results were from the metrics
+5. we equip individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action. 
+
+## Users
+- users in remote areas in developed countries or people in non-developed countries where water quality is not as measured
+
+## next steps: 
+- add wildlife data 
+- add natural distaster event data 
+
+
+
