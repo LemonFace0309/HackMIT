@@ -1,5 +1,7 @@
 # HackMIT
 
+It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
+
 Introducing AquaGuard: Revolutionizing Water Quality Monitoring for a Sustainable Future
 
 Our mission is simple yet profound: to provide comprehensive water quality data to people worldwide, empowering them to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
