@@ -9,79 +9,38 @@ import ReactMap, {
 import { ControlPanel } from "@/components/control-panel";
 import { DrawControl } from "@/components/draw-controls";
 import { SlideOver } from "@/components/slide-over";
-
 import { Pin } from "@/components/pin";
+import { Coordinate } from "@/types";
 
 export function Map() {
+  const [selectedCord, setSelectedCord] = useState<Coordinate | null>(null);
   const [viewState, setViewState] = useState({
     latitude: 42.3601,
     longitude: -71.0942,
     zoom: 14,
   });
 
-  const [features, setFeatures] = useState<Record<string, string>>({});
-  const [curCordinates, setCurCordinates] = useState<[number, number][]>([]);
-
-  const onUpdate = useCallback((e: { features: any[] }) => {
-    setCurCordinates(e.features[0].geometry.coordinates);
-    setFeatures((currFeatures) => {
-      const newFeatures = { ...currFeatures };
-      for (const f of e.features) {
-        newFeatures[f.id] = f;
-      }
-      return newFeatures;
-    });
-  }, []);
-
-  const onDelete = useCallback((e: { features: any[] }) => {
-    setCurCordinates([]);
-    setFeatures((currFeatures) => {
-      const newFeatures = { ...currFeatures };
-      for (const f of e.features) {
-        delete newFeatures[f.id];
-      }
-      return newFeatures;
-    });
-  }, []);
+  const onClick = (event: mapboxgl.MapLayerMouseEvent) => {
+    console.log("Point selected:", event);
+    setSelectedCord(event.lngLat);
+  };
 
   return (
     <div className="relative w-full h-full">
       <ReactMap
-        // {...viewState}
+        {...viewState}
         reuseMaps
         style={{ height: "100%", width: "100%" }}
-        // onMove={(evt) => setViewState(evt.viewState)}
-        initialViewState={{
-          latitude: 42.3601,
-          longitude: -71.0942,
-          zoom: 14,
-        }}
+        onMove={(evt) => setViewState(evt.viewState)}
         mapStyle="mapbox://styles/mapbox/satellite-v9"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+        onClick={onClick}
       >
         <GeolocateControl position="top-left" />
-        <FullscreenControl position="top-left" />
         <NavigationControl position="top-left" />
-        <ScaleControl />
-        <DrawControl
-          position="top-left"
-          displayControlsDefault={false}
-          controls={{
-            polygon: true,
-            trash: true,
-          }}
-          defaultMode="draw_polygon"
-          onCreate={onUpdate}
-          onUpdate={onUpdate}
-          onDelete={onDelete}
-        />
-        <ControlPanel polygons={Object.values(features)} />
+        {/* <ScaleControl /> */}
       </ReactMap>
-      <SlideOver
-        coordinates={curCordinates}
-        waterId={5}
-        onClose={() => setCurCordinates([])}
-      />
+      <SlideOver coord={selectedCord} onClose={() => setSelectedCord(null)} />
     </div>
   );
 }

@@ -20,14 +20,15 @@ import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
 
 import { formatCoordinate } from "@/utils/format-coordinate";
 
+import { Coordinate } from "@/types";
+
 type SlideOverProps = {
-  coordinates: [number, number][];
-  waterId: number;
+  coord: Coordinate | null;
   onClose: () => void;
 };
 
-export function SlideOver({ coordinates, waterId, onClose }: SlideOverProps) {
-  const variant = waterId === -1 ? "closed" : "open";
+export function SlideOver({ coord, onClose }: SlideOverProps) {
+  const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
@@ -43,7 +44,7 @@ export function SlideOver({ coordinates, waterId, onClose }: SlideOverProps) {
         variants={variants}
         animate={variant}
         initial="closed"
-        className="absolute top-0 bottom-0 left-0 w-full overflow-auto md:w-2/5 bg-white shadow-md"
+        className="absolute top-0 bottom-0 left-0 w-full overflow-auto md:w-2/5 bg-white shadow-md z-10"
       >
         <Box overflowY="auto" h="100%">
           <IconButton
@@ -55,7 +56,7 @@ export function SlideOver({ coordinates, waterId, onClose }: SlideOverProps) {
             icon={<CloseIcon />}
             onClick={onClose}
           />
-          {!!coordinates && (
+          {!!coord && (
             <Box
               p={10}
               fontSize="xl"
@@ -65,7 +66,7 @@ export function SlideOver({ coordinates, waterId, onClose }: SlideOverProps) {
                 "> p": { mt: 4 },
               }}
             >
-              <Heading as="h1">Location [Replace]</Heading>
+              <Heading as="h1">Title</Heading>
 
               <Text>
                 📍 Centered at{" "}

@@ -1,4 +1,4 @@
-type Direction = "N" | "S" | "E" | "W";
+import type { Direction } from "@/types";
 
 export const formatCoordinate = (coord: number, pos: Direction, neg: Direction) => {
   const direction = coord > 0 ? pos : neg;
