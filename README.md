@@ -2,9 +2,9 @@
 
 It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
 
-Introducing AquaGuard: Revolutionizing Water Quality Monitoring for a Sustainable Future
+That's why we decided to build AquaGuard. Revolutionizing Water Quality Monitoring for a Sustainable Future
 
-Our mission is simple yet profound: to provide comprehensive water quality data to people worldwide, empowering them to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
+Our mission is simple: to provide comprehensive water quality data to people worldwide, empowering everyone to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
 
 AquaGuard combines cutting-edge satellite technology with local wildlife and human population data to yield insightful implications about water quality. This multifaceted approach not only ensures the accuracy of our assessments but also sheds light on the intricate relationships between ecosystems and human communities.
 
