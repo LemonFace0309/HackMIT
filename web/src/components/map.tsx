@@ -6,7 +6,8 @@ import ReactMap, {
   ScaleControl,
 } from "react-map-gl";
 
-import DrawControl from "@/components/draw-controls";
+import { ControlPanel } from "@/components/control-panel";
+import { DrawControl } from "@/components/draw-controls";
 
 import { Pin } from "@/components/pin";
 
@@ -18,8 +19,11 @@ export function Map() {
   });
 
   const [features, setFeatures] = useState<Record<string, string>>({});
+  const [curCordinates, setCurCordinates] = useState<number[]>([]);
+  console.log(curCordinates);
 
   const onUpdate = useCallback((e: { features: any[] }) => {
+    setCurCordinates(e.features[0].geometry.coordinates);
     setFeatures((currFeatures) => {
       const newFeatures = { ...currFeatures };
       for (const f of e.features) {
@@ -63,13 +67,14 @@ export function Map() {
           displayControlsDefault={false}
           controls={{
             polygon: true,
-            trash: true
+            trash: true,
           }}
           defaultMode="draw_polygon"
           onCreate={onUpdate}
           onUpdate={onUpdate}
           onDelete={onDelete}
         />
+        <ControlPanel polygons={Object.values(features)} />
       </ReactMap>
     </div>
   );

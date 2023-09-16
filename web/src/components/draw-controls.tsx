@@ -1,7 +1,6 @@
 // @ts-nocheck
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import { useControl } from "react-map-gl";
-import Map from 'react-map-gl';
 
 import type { MapRef, ControlPosition } from "react-map-gl";
 
@@ -13,7 +12,7 @@ type DrawControlProps = ConstructorParameters<typeof MapboxDraw>[0] & {
   onDelete?: (evt: { features: object[] }) => void;
 };
 
-export default function DrawControl(props: DrawControlProps) {
+export function DrawControl(props: DrawControlProps) {
   useControl<MapboxDraw>(
     () => new MapboxDraw(props),
     ({ map }: { map: MapRef }) => {
