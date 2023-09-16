@@ -1,27 +1,14 @@
-import { useState } from "react";
-import ReactMap, { Source, Layer } from "react-map-gl";
-import type { CircleLayer } from "react-map-gl";
-import type { FeatureCollection } from "geojson";
+import { useCallback, useState } from "react";
+import ReactMap, {
+  GeolocateControl,
+  FullscreenControl,
+  NavigationControl,
+  ScaleControl,
+} from "react-map-gl";
 
-const geojson: FeatureCollection = {
-  type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [-71.0942, 42.3601] },
-      properties: { name: "MIT" },
-    },
-  ],
-};
+import DrawControl from "@/components/draw-controls";
 
-const layerStyle: CircleLayer = {
-  id: "point",
-  type: "circle",
-  paint: {
-    "circle-radius": 10,
-    "circle-color": "#007cbf",
-  },
-};
+import { Pin } from "@/components/pin";
 
 export function Map() {
   const [viewState, setViewState] = useState({
@@ -30,13 +17,35 @@ export function Map() {
     zoom: 14,
   });
 
+  const [features, setFeatures] = useState<Record<string, string>>({});
+
+  const onUpdate = useCallback((e: { features: any[] }) => {
+    setFeatures((currFeatures) => {
+      const newFeatures = { ...currFeatures };
+      for (const f of e.features) {
+        newFeatures[f.id] = f;
+      }
+      return newFeatures;
+    });
+  }, []);
+
+  const onDelete = useCallback((e: { features: any[] }) => {
+    setFeatures((currFeatures) => {
+      const newFeatures = { ...currFeatures };
+      for (const f of e.features) {
+        delete newFeatures[f.id];
+      }
+      return newFeatures;
+    });
+  }, []);
+
   return (
     <div className="relative w-full h-full">
       <ReactMap
-        {...viewState}
+        // {...viewState}
         reuseMaps
         style={{ height: "100%", width: "100%" }}
-        onMove={(evt) => setViewState(evt.viewState)}
+        // onMove={(evt) => setViewState(evt.viewState)}
         initialViewState={{
           latitude: 42.3601,
           longitude: -71.0942,
@@ -45,9 +54,22 @@ export function Map() {
         mapStyle="mapbox://styles/mapbox/satellite-v9"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
       >
-        <Source id="main-map" type="geojson" data={geojson}>
-          <Layer {...layerStyle} />
-        </Source>
+        <GeolocateControl position="top-left" />
+        <FullscreenControl position="top-left" />
+        <NavigationControl position="top-left" />
+        <ScaleControl />
+        <DrawControl
+          position="top-left"
+          displayControlsDefault={false}
+          controls={{
+            polygon: true,
+            trash: true
+          }}
+          defaultMode="draw_polygon"
+          onCreate={onUpdate}
+          onUpdate={onUpdate}
+          onDelete={onDelete}
+        />
       </ReactMap>
     </div>
   );

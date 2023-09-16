@@ -1,54 +1,59 @@
-import { useState } from "react";
+// @ts-nocheck
+import { useCallback, useState } from "react";
 import ReactMap, { Source, Layer } from "react-map-gl";
 import type { CircleLayer } from "react-map-gl";
 import type { FeatureCollection } from "geojson";
 
-const geojson: FeatureCollection = {
-  type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [-71.0942, 42.3601] },
-      properties: { name: "MIT" },
-    },
-  ],
-};
-
-const layerStyle: CircleLayer = {
-  id: "point",
-  type: "circle",
-  paint: {
-    "circle-radius": 10,
-    "circle-color": "#007cbf",
-  },
-};
+import DrawControl from './draw-controls';
 
 export function Map() {
-  const [viewState, setViewState] = useState({
-    latitude: 42.3601,
-    longitude: -71.0942,
-    zoom: 14,
-  });
+  const [features, setFeatures] = useState({});
+
+  const onUpdate = useCallback((e) => {
+    setFeatures((currFeatures) => {
+      const newFeatures = { ...currFeatures };
+      for (const f of e.features) {
+        newFeatures[f.id] = f;
+      }
+      return newFeatures;
+    });
+  }, []);
+
+  const onDelete = useCallback((e) => {
+    setFeatures((currFeatures) => {
+      const newFeatures = { ...currFeatures };
+      for (const f of e.features) {
+        delete newFeatures[f.id];
+      }
+      return newFeatures;
+    });
+  }, []);
 
   return (
-    <div className="relative w-full h-full">
+    <>
       <ReactMap
-        {...viewState}
-        reuseMaps
-        style={{ height: "100%", width: "100%" }}
-        onMove={(evt) => setViewState(evt.viewState)}
         initialViewState={{
-          latitude: 42.3601,
-          longitude: -71.0942,
-          zoom: 14,
+          longitude: -91.874,
+          latitude: 42.76,
+          zoom: 12,
         }}
         mapStyle="mapbox://styles/mapbox/satellite-v9"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
       >
-        <Source id="maps" type="geojson" data={geojson}>
-          <Layer {...layerStyle} />
-        </Source>
+        <DrawControl
+          position="top-left"
+          displayControlsDefault={false}
+          controls={{
+            polygon: true,
+            trash: true,
+          }}
+          defaultMode="draw_polygon"
+          onCreate={onUpdate}
+          onUpdate={onUpdate}
+          onDelete={onDelete}
+        />
       </ReactMap>
-    </div>
+      {/* <ControlPanel polygons={Object.values(features)} /> */}
+    </>
   );
 }
