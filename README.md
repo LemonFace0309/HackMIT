@@ -6,7 +6,7 @@ That's why we decided to build AquaGuard. Revolutionizing Water Quality Monitori
 
 Our mission is simple: to provide comprehensive water quality data to people worldwide, empowering everyone to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
 
-AquaGuard combines cutting-edge satellite technology with local wildlife and human population data to yield insightful implications about water quality. This multifaceted approach not only ensures the accuracy of our assessments but also sheds light on the intricate relationships between ecosystems and human communities.
+AquaGuard combines satellite and crowdsourced imagery with local wildlife and human population data to yield insightful implications about water quality. This multifaceted approach not only ensures the accuracy of our assessments but also sheds light on the intricate relationships between ecosystems and human communities.
 
 But we don't stop at data. AquaGuard equips individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action.
 
