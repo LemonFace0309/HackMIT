@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import ReactMap, {
   GeolocateControl,
   FullscreenControl,
+  Marker,
   NavigationControl,
   ScaleControl,
 } from "react-map-gl";
@@ -22,6 +23,10 @@ export function Map() {
 
   const onClick = (event: mapboxgl.MapLayerMouseEvent) => {
     console.log("Point selected:", event);
+    if (selectedCord) {
+      setSelectedCord(null);
+      return;
+    }
     setSelectedCord(event.lngLat);
   };
 
@@ -38,7 +43,15 @@ export function Map() {
       >
         <GeolocateControl position="top-left" />
         <NavigationControl position="top-left" />
-        {/* <ScaleControl /> */}
+        {selectedCord && (
+          <Marker
+            longitude={selectedCord.lng}
+            latitude={selectedCord.lat}
+            anchor="bottom"
+          >
+            <Pin size={20} />
+          </Marker>
+        )}
       </ReactMap>
       <SlideOver coord={selectedCord} onClose={() => setSelectedCord(null)} />
     </div>

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Box,
   useToken,
@@ -28,12 +30,15 @@ type SlideOverProps = {
 };
 
 export function SlideOver({ coord, onClose }: SlideOverProps) {
+  const [isLoading, setIsLoading] = useState(false);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
   };
   const recommendations: string[] = [];
+
+  const uploadImage = () => {};
 
   return (
     <AnimatePresence mode="wait">
@@ -71,8 +76,8 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
               <Text>
                 📍 Centered at{" "}
                 <b>
-                  {formatCoordinate(105.6, "N", "S")},&nbsp;
-                  {formatCoordinate(505.2, "E", "W")}
+                  {formatCoordinate(coord.lng, "N", "S")},&nbsp;
+                  {formatCoordinate(coord.lat, "E", "W")}
                 </b>
               </Text>
               {/* <Text>
@@ -80,6 +85,27 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 <b>{curHotspot.maxTime}</b>
               </Text> */}
 
+              <ButtonGroup
+                colorScheme="teal"
+                size="lg"
+                className="w-full flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
+              >
+                <Button
+                  variant="outline"
+                  isLoading={isLoading}
+                  className="flex-1 p-4"
+                >
+                  Use Satellite Imagery
+                </Button>
+                <Button
+                  variant="solid"
+                  isLoading={isLoading}
+                  className="flex-1 p-4"
+                  onClick={uploadImage}
+                >
+                  Upload a Photo
+                </Button>
+              </ButtonGroup>
               <Heading as="h2" fontSize="3xl" mt={4}>
                 Recommendations
               </Heading>
