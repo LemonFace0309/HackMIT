@@ -2,7 +2,7 @@
 
 It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
 
-Suppose the pond in your backyard is beginning to decline in water quality, what would you do? The answer is unclear for most people, and that's the problem we want to solve.
+Suppose you see a sudden influx of algae in a local pond, or that you pass by a local river but you notice it's all dried up, what would you do? The answer is unclear for most people, and that's the problem we want to solve.
 
 That's why we decided to build AquaGuard. Revolutionizing Water Quality Monitoring for a Sustainable Future
 
@@ -10,7 +10,7 @@ Our mission is simple: to provide comprehensive water quality data to people wor
 
 AquaGuard combines satellite and crowdsourced imagery with local wildlife and human population data to yield insightful implications about water quality. This multifaceted approach not only ensures the accuracy of our assessments but also sheds light on the intricate relationships between ecosystems and human communities.
 
-But we don't stop at data. AquaGuard equips individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action.
+But we don't stop at data. AquaGuard equips individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives, tools to report illegal dumping, and warnings about droughts, we empower communities to take tangible action.
 
 Our vision is simple: water is the quintessential enabler of life, and everyone, regardless of their resources, deserves access to information about the water they rely on. Join us at HackMIT and be a part of the AquaGuard revolution, as we work towards a sustainable future where water quality is a concern of the past. Together, we can ensure that no one is powerless in the face of water pollution, safeguarding the life-giving essence of our planet for the next generation.
 
@@ -74,6 +74,15 @@ OR users take a pic
 4. we rank the water area on a scale of 10, and also write down what the results were from the metrics
 5. we equip individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action. 
 
+## Macro water metrics that can be inferred from satellite images 
+1. Turbidity: Turbidity, or the cloudiness of water due to suspended particles, can be estimated using satellite imagery. High turbidity can indicate potential contaminants or pathogens in the water.
+
+2. Algal Blooms: The presence of harmful algal blooms, which may produce toxins detrimental to human health, can be identified using specific spectral bands from satellite imagery.
+
+3. Land Use and Deforestation: Satellite imagery can show changes in land use around a water body. Deforestation, urbanization, or agricultural expansion can influence water quality.
+
+4. Color: The color of a water body can provide clues about its composition. For example, a reddish or brownish hue might indicate a high concentration of iron or tannins.
+   
 ## Users
 - users in remote areas in developed countries or people in non-developed countries where water quality is not as measured
 
@@ -82,5 +91,6 @@ OR users take a pic
 - add natural distaster event data
 - train a specific model for water quality analysis based on satellite or camera imagery.
 - provide localized resources
+- Ensure that the location data, especially from individual users, is anonymized and secure. Users might be hesitant to use the app if they feel their data could be misused.
 
 
