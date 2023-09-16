@@ -10,7 +10,7 @@ AquaGuard combines satellite and crowdsourced imagery with local wildlife and hu
 
 But we don't stop at data. AquaGuard equips individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action.
 
-Our vision is simple: water is the quintessential enabler of life, and everyone, regardless of their resources, deserves access to information about the water they rely on. Join us at HackMIT and be a part of the AquaGuard revolution, as we work towards a sustainable future where water quality is a concern of the past. Together, we can ensure that no one is powerless in the face of water pollution, safeguarding the life-giving essence of our planet.
+Our vision is simple: water is the quintessential enabler of life, and everyone, regardless of their resources, deserves access to information about the water they rely on. Join us at HackMIT and be a part of the AquaGuard revolution, as we work towards a sustainable future where water quality is a concern of the past. Together, we can ensure that no one is powerless in the face of water pollution, safeguarding the life-giving essence of our planet for the next generation.
 
 
 water quality + wildlife health + predictions???
