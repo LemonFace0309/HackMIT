@@ -94,3 +94,22 @@ OR users take a pic
 - Ensure that the location data, especially from individual users, is anonymized and secure. Users might be hesitant to use the app if they feel their data could be misused.
 
 
+# Mini pitch for gov
+### AquaGuard for Government Agencies
+Water is life, but how well do we truly know our water bodies?
+- In today's dynamic world, where environmental changes are the new norm, having real-time, comprehensive data on our water bodies isn't a luxury; it's a necessity. Yet, the harsh reality is that a significant number of our smaller water bodies go unmonitored, leaving communities vulnerable and ecosystems at risk.
+
+Enter AquaGuard.
+
+Why AquaGuard?
+
+1. Comprehensive Monitoring: From the largest lake to the smallest pond, get data on all water bodies, ensuring no community is left uninformed and no ecosystem is overlooked.
+2. Cost-Effective & Efficient: Traditional water quality assessments can be resource-intensive. With AquaGuard's AI-driven system, cut down on costs while boosting monitoring frequency.
+3. Proactive Approach: Be alerted to potential issues, from algal blooms to contamination, before they become large-scale crises. Respond faster, plan smarter.
+
+### Why this is important
+- Scale of Untracked Water Bodies: Many large lakes, rivers, and reservoirs are often monitored due to their significance. It's the smaller, decentralized water bodies that often fall through the cracks. These water bodies can still have significant local importance, serving communities, supporting ecosystems, or acting as potential indicators for larger regional environmental trends.
+
+- Emerging Concerns: With the advent of climate change, many regions are witnessing new phenomena like algal blooms in areas where they were previously rare. A tool like AquaGuard would be invaluable in providing real-time updates in such rapidly changing scenarios.
+
+- Cost & Resource Allocation: Traditional water monitoring often requires field visits, laboratory tests, and can be resource-intensive. An AI-driven, satellite imagery-based system can drastically reduce costs and increase monitoring frequency, making it attractive to government bodies.
