@@ -74,6 +74,15 @@ OR users take a pic
 4. we rank the water area on a scale of 10, and also write down what the results were from the metrics
 5. we equip individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action. 
 
+## Macro water metrics that can be inferred from satellite images 
+1. Turbidity: Turbidity, or the cloudiness of water due to suspended particles, can be estimated using satellite imagery. High turbidity can indicate potential contaminants or pathogens in the water.
+
+2. Algal Blooms: The presence of harmful algal blooms, which may produce toxins detrimental to human health, can be identified using specific spectral bands from satellite imagery.
+
+3. Land Use and Deforestation: Satellite imagery can show changes in land use around a water body. Deforestation, urbanization, or agricultural expansion can influence water quality.
+
+4. Color: The color of a water body can provide clues about its composition. For example, a reddish or brownish hue might indicate a high concentration of iron or tannins.
+   
 ## Users
 - users in remote areas in developed countries or people in non-developed countries where water quality is not as measured
 

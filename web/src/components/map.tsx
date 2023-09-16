@@ -8,6 +8,7 @@ import ReactMap, {
 
 import { ControlPanel } from "@/components/control-panel";
 import { DrawControl } from "@/components/draw-controls";
+import { SlideOver } from "@/components/slide-over";
 
 import { Pin } from "@/components/pin";
 
@@ -19,8 +20,7 @@ export function Map() {
   });
 
   const [features, setFeatures] = useState<Record<string, string>>({});
-  const [curCordinates, setCurCordinates] = useState<number[]>([]);
-  console.log(curCordinates);
+  const [curCordinates, setCurCordinates] = useState<[number, number][]>([]);
 
   const onUpdate = useCallback((e: { features: any[] }) => {
     setCurCordinates(e.features[0].geometry.coordinates);
@@ -34,6 +34,7 @@ export function Map() {
   }, []);
 
   const onDelete = useCallback((e: { features: any[] }) => {
+    setCurCordinates([]);
     setFeatures((currFeatures) => {
       const newFeatures = { ...currFeatures };
       for (const f of e.features) {
@@ -76,6 +77,11 @@ export function Map() {
         />
         <ControlPanel polygons={Object.values(features)} />
       </ReactMap>
+      <SlideOver
+        coordinates={curCordinates}
+        waterId={5}
+        onClose={() => setCurCordinates([])}
+      />
     </div>
   );
 }
