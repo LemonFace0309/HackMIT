@@ -20,7 +20,7 @@ In today's world, water—the most vital resource of all—is under threat. Yet,
 
 **Our Commitment:**
 
-Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river tackle the problem of ensuring clean water for all as we couldn't imagine how devestating it would feel to be powerless in the face of water degradation.
+Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devestating it would feel to be powerless in the face of water degradation.
 
 In just 24 hours, we've laid the foundation of AquaGuard. If this is what we can achieve in a day, imagine the possibilities in a year. We want to safeguard the quality of water for our children and generations beyond.
 
