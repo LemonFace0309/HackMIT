@@ -36,8 +36,12 @@ Inspired by the deteriorating Charles River, AquaGuard aims to revolutionize wat
 
 AquaGuard stands apart, seamlessly merging satellite and crowdsourced imagery with local wildlife and human population data. This integrated lens doesn't just measure water quality—it interprets it, showing the impact on both human communities and the environment.
 
-Our dashboard uses cutting-edge technology like GPT-4 AI analysis and data visualization to provide:
+What you can get from AquaGuard:
+1. Comprehensive Monitoring: From the largest lake to the smallest pond, get data on all water bodies, ensuring no community is left uninformed and no ecosystem is overlooked.
+2. Cost-Effective & Efficient: Traditional water quality assessments can be resource-intensive. With AquaGuard's AI-driven system, cut down on costs while boosting monitoring frequency.
+3. Proactive Approach: Be alerted to potential issues, from algal blooms to contamination, before they become large-scale crises. Respond faster, plan smarter.
 
+Our dashboard uses cutting-edge technology like GPT-4 AI analysis and data visualization to provide:
 - Real-time water quality scores on a 10-point scale, based on WHO and CDC metrics.
 - Immediate implications for human and wildlife health.
 - Predictions and proactive recommendations for future challenges.
