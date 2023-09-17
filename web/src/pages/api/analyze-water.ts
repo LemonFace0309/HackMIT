@@ -36,7 +36,7 @@ export default async function handler(
     return res.status(400).json("Image Required");
   }
 
-  console.log(image.filepath)
+  // console.log(image.filepath)
 
   const allWaterData = JSON.parse(
     fs.readFileSync(
@@ -51,7 +51,7 @@ export default async function handler(
 
   if (!data) {
     // TODO(William): Add node script here to process and return results
-    console.log(fields.imageUrl)
+    // console.log(fields.imageUrl)
     data = null; // todo
   }
 
