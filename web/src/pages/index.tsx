@@ -13,10 +13,10 @@ export default function Home() {
         <title>AquaGuard Homepage</title>
       </Head>
 
-      <div className="relative w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+      <div className="relative w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-8">
         <div className="w-full h-full flex justify-center items-center flex-col z-10 text-white space-y-8">
-          <h1 className="text-8xl font-bold">AquaGuard</h1>
-          <h2 className="text-4xl text-center">
+          <h1 className="text-3xl lg:text-8xl font-bold">AquaGuard</h1>
+          <h2 className="text-xl lg:text-4xl text-center">
             We empower all individuals with the data and tangible insights to
             safeguard their local water sources regardless of their location
             from the palm of their hands.
@@ -24,7 +24,7 @@ export default function Home() {
           <ButtonGroup
             colorScheme="orange"
             size="2xl"
-            className="w-full lg:w-2/5 flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
+            className="w-full md:w-4/5 lg:w-2/5 flex flex-col md:flex-row mt-4 space-y-4 md:space-y-0 space-x-0 md:space-x-4"
           >
             <Link href="/map" className="flex-1">
               <Button variant="solid" className="w-full p-4">
