@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+
 import ReactMap, {
   GeolocateControl,
   FullscreenControl,
@@ -8,7 +9,8 @@ import ReactMap, {
   MapRef,
 } from "react-map-gl";
 
-import { ControlPanel } from "@/components/control-panel";
+import { Alerts } from "@/components/bounty/alert";
+import { ControlPanel } from "@/components/bounty/control-panel";
 import { SlideOver } from "@/components/slide-over";
 import { Pin } from "@/components/pin";
 import { Bounty, Coordinate, WaterData } from "@/types";
@@ -59,6 +61,18 @@ export function Map() {
       >
         <GeolocateControl position="top-left" />
         <NavigationControl position="top-left" />
+
+        {/* Bounty Alerts */}
+        <Alerts
+          viewMoreHandler={(bounty: Bounty) =>
+            setSelectedCord({
+              lat: bounty.latitude,
+              lng: bounty.longitude,
+              bounty: bounty.bounty,
+            })
+          }
+        />
+
         {selectedCord && (
           <Marker
             longitude={selectedCord.lng}

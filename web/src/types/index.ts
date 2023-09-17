@@ -5,13 +5,14 @@ export type Direction = "N" | "S" | "E" | "W";
 export type Coordinate = {
   lat: number;
   lng: number;
+  bounty?: number;
 };
 
 export type Bounty = {
-	label: string;
-	image?: string;
+  label: string;
+  image?: string;
   urgency: number;
-	latitude: number;
+  latitude: number;
   longitude: number;
   bounty: number;
 };
@@ -28,4 +29,3 @@ export type WaterData = {
   "Implications of water quality": string[];
   "Recommendations to improve water quality": string[];
 };
-
