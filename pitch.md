@@ -1,6 +1,8 @@
 # 🌊 **AquaGuard - HackMIT** 🌊
 
-AquaGuard: Harnessing AI-powered satellite analytics to democratize real-time water quality insights, transforming communities into proactive guardians for a resilient and sustainable aquatic ecosystem
+AquaGuard: We empower all individuals with the data and tangible insights to safeguard their local water sources regardless of their location from the palm of their hands.
+
+We harness AI-powered satellite and crowdsourced imagery to generate real-time water quality insights and equips individuals with the resources they need to safeguard their water sources effectively - we empower communities to take tangible action.
 
 ### TLDR:
 
