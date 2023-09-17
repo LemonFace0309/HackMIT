@@ -112,7 +112,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
         url,
       });
 
-      // setWaterData(response.data.data);
+      setWaterData(response.data.data);
 
       console.log("Upload successful:", response.data);
     } catch (error) {
