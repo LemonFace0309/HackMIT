@@ -55,7 +55,7 @@ export default async function handler(
     data = null; // todo
   }
 
-  await sleep(10000);
+  await sleep(5000);
 
   res.status(200).json({ data });
 }
