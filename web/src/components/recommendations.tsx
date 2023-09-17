@@ -9,6 +9,9 @@ type RecommendationsProps = {
 export const Recommendations = ({ waterData }: RecommendationsProps) => {
   return (
     <Box>
+      <Heading as="h2" fontSize="3xl" mt={4}>
+        Water Insights
+      </Heading>
       <Heading size="md">Score: {waterData["Score out of 10"]}/10</Heading>
       <Text mt={3}>{waterData["Explanation for score"]}</Text>
 
