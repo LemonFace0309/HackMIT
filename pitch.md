@@ -2,6 +2,8 @@
 
 🌊 **AquaGuard Pitch - HackMIT** 🌊
 
+AquaGuard: Harnessing AI-powered satellite analytics to democratize real-time water quality insights, transforming communities into proactive guardians for a resilient and sustainable aquatic ecosystem
+
 ---
 
 **Intro:**
@@ -20,7 +22,9 @@ In today's world, water—the most vital resource of all—is under threat. Yet,
 
 **Our Commitment:**
 
-We are intensely passionate about water. In just 24 hours, we've laid the foundation of AquaGuard. If this is what we can achieve in a day, imagine the possibilities in a year. We want to safeguard the quality of water for our children and generations beyond.
+Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devestating it would feel to be powerless in the face of water degradation.
+
+In just 24 hours, we've laid the foundation of AquaGuard. If this is what we can achieve in a day, imagine the possibilities in a year. We want to safeguard the quality of water for our children and generations beyond.
 
 ---
 
@@ -34,8 +38,12 @@ Inspired by the deteriorating Charles River, AquaGuard aims to revolutionize wat
 
 AquaGuard stands apart, seamlessly merging satellite and crowdsourced imagery with local wildlife and human population data. This integrated lens doesn't just measure water quality—it interprets it, showing the impact on both human communities and the environment.
 
-Our dashboard uses cutting-edge technology like GPT-4 AI analysis and data visualization to provide:
+What you can get from AquaGuard:
+1. Comprehensive Monitoring: From the largest lake to the smallest pond, get data on all water bodies, ensuring no community is left uninformed and no ecosystem is overlooked.
+2. Cost-Effective & Efficient: Traditional water quality assessments can be resource-intensive. With AquaGuard's AI-driven system, cut down on costs while boosting monitoring frequency.
+3. Proactive Approach: Be alerted to potential issues, from algal blooms to contamination, before they become large-scale crises. Respond faster, plan smarter.
 
+Our dashboard uses cutting-edge technology like GPT-4 AI analysis and data visualization to provide:
 - Real-time water quality scores on a 10-point scale, based on WHO and CDC metrics.
 - Immediate implications for human and wildlife health.
 - Predictions and proactive recommendations for future challenges.
