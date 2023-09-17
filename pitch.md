@@ -8,11 +8,8 @@ We harness AI-powered satellite and crowdsourced imagery to generate real-time w
 
 1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) with 5.6 trillion in GDP expected to be lost due to water risk globally by 2050 (Source: [World Bank](https://www.worldbank.org/en/topic/water/overview#:~:text=Economic%20growth%20is%20a%20%22thirsty,%2C%20health%2C%20income%20and%20prosperity.)). Yet vast water bodies remain unmonitored due to inadequate resources.
 2. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to give an in-depth analysis of water quality.
-3. Our AI dashboard, powered by GPT-4, provides real-time water quality scores, health implications, and actionable insights, supported by both WHO and CDC metrics.
-4. Introduced gamification: Users earn rewards for their conservation actions, fostering a global community of water guardians.
-5. AquaGuard's holistic approach empowers individuals with data and the tools to take direct action, ensuring clean water for all.
-6. Beyond a mere app, AquaGuard is building a movement, partnering with eco-friendly manufacturers, NGOs, and government agencies for maximal impact.
-7. Designed for both remote areas in developed nations and underserved regions globally, AquaGuard empowers all to champion health equity and environmental stewardship with the device in the palm of their hand!
+3. Our AI dashboard, powered by GPT-4, provides real-time water quality scores, health implications, and actionable insights.
+4. Designed for both remote areas in developed nations and underserved regions globally, AquaGuard empowers all to champion health equity and environmental stewardship with the device in the palm of their hand!
 
 ---
 
