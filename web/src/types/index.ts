@@ -19,3 +19,9 @@ export type WaterData = {
   "Implications of water quality": string[];
   "Recommendations to improve water quality": string[];
 };
+
+export type Bounty = {
+  city: "string";
+  latitude: number;
+  longitude: number;
+};
