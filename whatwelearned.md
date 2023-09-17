@@ -1,4 +1,4 @@
-##What We Learned for AquaGuard
+## What We Learned for AquaGuard
 
 ---
 
@@ -26,7 +26,7 @@ Our integration with OpenAI's GPT-4 for data analysis was an enlightening journe
 
 ---
 
-###HackMIT Core Memories
+### HackMIT Core Memories
 
 Met Ali Partovi after his talk!
 
