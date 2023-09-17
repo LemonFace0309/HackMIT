@@ -20,15 +20,15 @@ To the best of your ability using the image, describe the water body's algae con
 Give the water a score out of 10 based on how clear it is with an explanation. 
 Image Link: {imageUrl}. 
 
-Format the output in bullet points with the water quality metrics of: 
+Format the output in json with the following water quality metrics of: 
 1. Score out of 10 (Provide only a number): 
 2. Explanation for score:, 
 3. Water Clarity, 
 4. Bioindicators, 
 5. Water Color, 
 6. Presence of Algae, 
-7. Implictions of water quality, 
-8. Recommendations to improve water quality.
+7. 3 Implictions of water quality (on wildlife, on human population, other stakeholders), 
+8. 3 Recommendations to improve water quality.
 """
 
 response = openai.ChatCompletion.create(
