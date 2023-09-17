@@ -70,9 +70,4 @@ Why AquaGuard?
 2. Cost-Effective & Efficient: Traditional water quality assessments can be resource-intensive. With AquaGuard's AI-driven system, cut down on costs while boosting monitoring frequency.
 3. Proactive Approach: Be alerted to potential issues, from algal blooms to contamination, before they become large-scale crises. Respond faster, plan smarter.
 
-### Why this is important
-- Scale of Untracked Water Bodies: Many large lakes, rivers, and reservoirs are often monitored due to their significance. It's the smaller, decentralized water bodies that often fall through the cracks. These water bodies can still have significant local importance, serving communities, supporting ecosystems, or acting as potential indicators for larger regional environmental trends.
 
-- Emerging Concerns: With the advent of climate change, many regions are witnessing new phenomena like algal blooms in areas where they were previously rare. A tool like AquaGuard would be invaluable in providing real-time updates in such rapidly changing scenarios.
-
-- Cost & Resource Allocation: Traditional water monitoring often requires field visits, laboratory tests, and can be resource-intensive. An AI-driven, satellite imagery-based system can drastically reduce costs and increase monitoring frequency, making it attractive to government bodies.
