@@ -128,10 +128,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   variant="solid"
                   isLoading={isLoading}
                   className="flex-1 p-4"
-                  onClick={() => {
-                    console.log(fileUploadRef?.current);
-                    fileUploadRef?.current?.click();
-                  }}
+                  onClick={() => fileUploadRef?.current?.click()}
                 >
                   Upload a Photo
                 </Button>

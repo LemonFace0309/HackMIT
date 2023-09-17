@@ -1,13 +1,52 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import fs from "fs";
+import path from "path";
+import type { NextApiRequest, NextApiResponse } from "next";
+import formidable from "formidable";
 
-type Data = {
-  name: string
-}
+import { WaterData } from "@/types";
 
-export default function handler(
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  if (req.method !== "POST") {
+    return res.status(405).end(); // Method Not Allowed
+  }
+
+  const form = formidable({});
+  let fields;
+  let files;
+  let image: formidable.File | undefined;
+  try {
+    [fields, files] = await form.parse(req);
+    image = files.image?.[0];
+  } catch (err) {
+    console.error(err);
+    return res.status(400).json("Unexpected Error");
+  }
+
+  if (!image) {
+    return res.status(400).json("Image Required");
+  }
+
+  const allWaterData = JSON.parse(
+    fs.readFileSync(path.join("src", "data", "water.json"), "utf-8")
+  );
+
+  let data = allWaterData.find(
+    (item: WaterData) => item.name === image!.originalFilename
+  );
+
+  if (!data) {
+    // TODO(William): Add node script here to process and return results
+    data = {}; // todo
+  }
+
+  res.status(200).json({ data });
 }

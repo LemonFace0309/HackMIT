@@ -24,6 +24,7 @@
     "axios": "^1.5.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "formidable": "^3.5.1",
     "framer-motion": "^10.16.4",
     "mapbox-gl": "^2.0.0",
     "maplibre-gl": "^2.4.0",
@@ -36,6 +37,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/formidable": "^3.4.3",
     "@types/mapbox__mapbox-gl-draw": "^1.4.1"
   }
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "clear.jpg",
+    "Score out of 10": 8,
+    "Explanation for score": "The water seems fairly clear with a natural blue color. There isn't any obvious presence of pollutants or heavy algae concentration based on the image. There are no visible bioindicators that suggest poor water quality. The score is not 10 because, without a physical or chemical test, an accurate assessment is not possible.",
+    "Water Clarity": "High - the water visibility appears to be proficient, suggesting good water quality.",
+    "Bioindicators": "No visible bioindicators of poor water quality.",
+    "Water Color": "Blue - suggests a healthy amount of dissolved oxygen and benign water conditions.",
+    "Presence of Algae": "Not clearly visible - presence of algae cannot be accurately established from the image.",
+    "Implictions of water quality": "The water quality appears to be good based on the image. Good quality water like this is suitable for wildlife habitation and non-consumptive human activities such as boating or swimming.",
+    "Recommendations to improve water quality": [
+      "Regular monitoring to catch early signs of contamination or algal bloom for early remediation.",
+      "Control any substances being disposed into the lake and possibly control the runoff from nearby areas.",
+      "Educate nearby population and visitors about the importance of clean water and their role in maintaining it."
+    ]
+  }
+]
