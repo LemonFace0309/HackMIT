@@ -14,7 +14,13 @@ For most, the answer is: Nothing. Not because they don't care, but because they 
 
 **The Problem:**
 
-In today's world, water—the most vital resource of all—is under threat. Yet, many feel powerless against the rapid urbanization, industrial discharges, and pollution affecting our water bodies. The threats don't stop at humans. They ripple through our ecosystem, impacting wildlife and the delicate balance of nature. While there are tools addressing these issues in isolation, we lack an integrated solution that brings it all together.
+In today's world, water—the most vital resource of all—is under threat. Yet, many feel powerless against the rapid urbanization, industrial discharges, and pollution affecting our water bodies. 
+
+By 2025, it's estimated that two-thirds of the world's population may face water shortages, and ecosystems around the world will suffer even more. (Source: World Wildlife Fund)
+
+What does that mean economically? By 2030, the global economy could lose up to 6% of GDP due to water challenges, including water scarcity, water stress, and flooding. (Source: World Bank)
+
+The threats don't stop at humans. They ripple through our ecosystem, impacting wildlife and the delicate balance of nature. While there are tools addressing these issues in isolation, we lack an integrated solution that brings it all together.
 
 ---
 
