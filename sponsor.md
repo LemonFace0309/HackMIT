@@ -1,6 +1,6 @@
 # Sponsor
 
-## Arrowstreet Prize: Best Generative AI Data Analysis Hack
+## 1. Arrowstreet Prize: Best Generative AI Data Analysis Hack
 
 AquaGuard & Generative AI: A Natural Fit
 
@@ -20,11 +20,11 @@ AquaGuard isn't just another data analysis tool—it's a movement driven by gene
 
 Awards Implication: The $1,000 prize would greatly accelerate AquaGuard's development, enhancing our AI capabilities and outreach. Moreover, the opportunity for an interview with the Quant Dev team signifies a chance to further integrate cutting-edge quantitative techniques into AquaGuard, cementing its place as an industry leader in water quality monitoring and analysis.
 
-**AquaGuard's Response for Backflip Prize: Most Technically Elegant Hack**
+## 2. **AquaGuard's Response for Backflip Prize: Most Technically Elegant Hack**
 
 ---
 
-## BackFlip **Technical Elegance Meets Environmental Stewardship**
+**Technical Elegance Meets Environmental Stewardship**
 
 At AquaGuard, we've endeavored to find that delicate balance between innovation and simplicity. Our vision? To democratize water quality monitoring, ensuring that every individual, regardless of technical prowess, can safeguard the water bodies they cherish. Here's how AquaGuard meets the criteria for Backflip's coveted prize:
 
@@ -52,7 +52,7 @@ AquaGuard embodies the essence of Backflip's philosophy—solving intricate chal
 
 **Awards Implication:** Winning the Segway Ninebot E22 Electric KickScooters would not just be a celebration of our hard work but a symbol of mobility and progress, resonating with AquaGuard's mission to move forward swiftly, ensuring cleaner water for all.
 
-## Care YayaHealth Technologies Prize: Elder Tech Innovation Challenge
+## 3. Care YayaHealth Technologies Prize: Elder Tech Innovation Challenge
 
 AquaGuard: Fostering Healthier Environments for our Elders
 
@@ -80,7 +80,7 @@ AquaGuard aligns seamlessly with CareYaya Health Technologies' mission. We envis
 
 Implication: Being recognized by CareYaya Health Technologies would reaffirm our commitment to holistic health solutions that cater to the unique needs of aging populations, emphasizing the pivotal role of environmental factors in health and well-being.
 
-## **AquaGuard's Response for Lantern Prize: Create an Artificial Intelligence Application**
+## 4. **AquaGuard's Response for Lantern Prize: Create an Artificial Intelligence Application**
 
 Amidst the rising global water crises, AquaGuard's commitment is clear – ensuring water purity for all. With the power of Lantern's vector database, we're revolutionizing water quality data processing and offering actionable insights for a cleaner tomorrow.
 
