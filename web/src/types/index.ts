@@ -1,3 +1,5 @@
+import formidable from "formidable";
+
 export type Direction = "N" | "S" | "E" | "W";
 
 export type Coordinate = {
@@ -6,6 +8,7 @@ export type Coordinate = {
 };
 
 export type WaterData = {
+  image: formidable.File | undefined;
   Name: string;
   "Score out of 10": number;
   "Explanation for score": string;

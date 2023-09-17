@@ -120,10 +120,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 >
                   Upload a Photo
                 </Button>
-              </ButtonGroup>
-              <Heading as="h2" fontSize="3xl" mt={4}>
-                Recommendations
-              </Heading>
+              </ButtonGroup>            
               {/* Todo: Replace null with loading state */}
               {waterData && <Recommendations waterData={waterData} />}
             </Box>
