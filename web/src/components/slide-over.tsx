@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
+import axios from "axios";
 import {
   Box,
   useToken,
@@ -15,7 +16,7 @@ import {
   Icon,
   Grid,
   Image,
-  useBreakpointValue,
+  Input,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
@@ -30,7 +31,9 @@ type SlideOverProps = {
 };
 
 export function SlideOver({ coord, onClose }: SlideOverProps) {
+  const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -38,7 +41,31 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
   };
   const recommendations: string[] = [];
 
-  const uploadImage = () => {};
+  const uploadImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = event.target.files?.[0];
+
+    if (!selectedFile) {
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("image", selectedFile);
+
+      const response = await axios.post("/api/analyze-water", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      console.log("Upload successful:", response.data);
+    } catch (error) {
+      console.error("Error uploading image:", error);
+    }
+    setIsLoading(false);
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -101,7 +128,10 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   variant="solid"
                   isLoading={isLoading}
                   className="flex-1 p-4"
-                  onClick={uploadImage}
+                  onClick={() => {
+                    console.log(fileUploadRef?.current);
+                    fileUploadRef?.current?.click();
+                  }}
                 >
                   Upload a Photo
                 </Button>
@@ -121,6 +151,14 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
             </Box>
           )}
         </Box>
+        {/* Manually invoke this */}
+        <Input
+          type="file"
+          accept="image/*"
+          display="none"
+          ref={fileUploadRef}
+          onChange={uploadImage}
+        />
       </motion.div>
     </AnimatePresence>
   );
