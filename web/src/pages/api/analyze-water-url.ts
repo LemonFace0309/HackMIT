@@ -86,6 +86,7 @@ export default async function handler(
   let content = response.choices[0].message.content || "";
 
   let jsonContent = content.substring(content.indexOf("{"), content.indexOf("}") + 1)
+  jsonContent.replaceAll("\\","");
 
   console.log(jsonContent)
 
