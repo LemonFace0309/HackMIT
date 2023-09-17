@@ -2,15 +2,16 @@
 
 AquaGuard: We empower all individuals with the data and tangible insights to safeguard their local water sources regardless of their location from the palm of their hands.
 
-We harness AI-powered satellite and crowdsourced imagery to generate real-time water quality insights and equips individuals with the resources they need to safeguard their water sources effectively - we empower communities to take tangible action.
+** We harness AI-powered satellite and crowdsourced imagery to generate real-time water quality insights and equips individuals with the resources they need to safeguard their water sources effectively - we empower communities to take tangible action. **
 
 ### TLDR:
 
 1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) with 5.6 trillion in GDP expected to be lost due to water risk globally by 2050 (Source: [World Bank](https://www.worldbank.org/en/topic/water/overview#:~:text=Economic%20growth%20is%20a%20%22thirsty,%2C%20health%2C%20income%20and%20prosperity.)).
 2. Yet vast water bodies remain unmonitored due to inadequate resources, given there are over 3 million lakes in the US alone.
 3. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to democratize  water quality analysis for all regardless of equipment and location.
-4. Our AI dashboard, powered by GPT-4's multi-modal model, provides real-time water quality scores, stakeholder implications, and actionable insights.
-5. Designed for both remote areas in developed nations and underserved regions globally, AquaGuard empowers all to champion health equity and environmental stewardship with the device in the palm of their hand!
+4. Our AI dashboard, powered by GPT-4's multi-modal model, provides real-time water quality scores, stakeholder implications, and actionable insights as a quick and accessible preliminary assessment.
+5. Our innovative "Water Bounty" system allows governments and organizations to set rewards on specific water bodies. This incentivizes local users to swiftly conduct preliminary assessments, offering a cost-effective and rapid response to potential concerns.
+6. Designed for both remote areas in developed nations and underserved regions globally, AquaGuard empowers all to champion health equity and environmental stewardship with the device in the palm of their hand!
 
 ---
 
@@ -18,7 +19,7 @@ We harness AI-powered satellite and crowdsourced imagery to generate real-time w
 
 *Imagine walking past a once-clear pond, now thick with algae. You notice a riverbed, previously filled with rushing waters, now eerily silent and dry. What would you do?*
 
-For most, the answer is: Nothing. Not because they don't care, but because they don't know where to begin.
+For most, the answer is: Nothing. Not because you don't care, but because you don't know where to begin.
 
 ---
 
@@ -34,12 +35,13 @@ The threats don't stop at humans. They ripple through our ecosystem, impacting w
 
 ---
 
-**Our Commitment:**
+**Our Origin and Vision**
 
-Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devestating it would feel to be powerless in the face of water degradation.
+Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devastating it would feel to be powerless in the face of water degradation.
+
+One of our team members resides near a small lake which, all too often, faces drought. It's a disheartening sight, especially as local management and residents alike seem at a loss for solutions. This once-thriving body of water becomes an overlooked issue, even though its importance is universally acknowledged. There's a glaring absence of a streamlined channel to communicate with governmental bodies or authorities who could potentially address this, coupled with a lack of easily accessible resources for the community to address and remedy the situation.
 
 In just 24 hours, we've laid the foundation of AquaGuard. If this is what we can achieve in a day, imagine the possibilities in a year. We want to safeguard the quality of water for our children and generations beyond.
-
 ---
 
 **Introducing AquaGuard:**
