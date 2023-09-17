@@ -12,8 +12,6 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/f13bc0e5-4876-4d96-9fcf
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/950efcec-287e-4439-8139-f9dd9468095e
 
-https://github.com/LemonFace0309/HackMIT/assets/25058545/ac045b14-d9f2-4d90-9e4c-cfce936e9228
-
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/03ae1d6e-0aa7-4dd5-9579-dc37b14fa133
 
