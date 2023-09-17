@@ -24,9 +24,9 @@ export function ControlPanel({ onSelectBounty }: ControlPanelProps) {
               name="city"
               className="mr-2"
               id={`city-${index}`}
-              onClick={() => onSelectBounty(bounty as Bounty)}
+              onClick={() => onSelectBounty(bounty)}
             />
-            <label htmlFor={`city-${index}`}>{bounty.city}</label>
+            <label htmlFor={`city-${index}`}>{bounty.label}</label>
           </div>
         ))}
       </div>

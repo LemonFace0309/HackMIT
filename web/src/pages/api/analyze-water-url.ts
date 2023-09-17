@@ -80,19 +80,19 @@ export default async function handler(
     presence_penalty: 0,
   });
 
-  console.log(response);
-  console.log(response.choices[0].message.content);
+  // console.log(response);
+  // console.log(response.choices[0].message.content);
 
   let content = response.choices[0].message.content || "";
 
   let jsonContent = content.substring(content.indexOf("{"), content.indexOf("}") + 1)
   jsonContent.replaceAll("\\","");
 
-  console.log(jsonContent)
+  // console.log(jsonContent)
 
   const data = JSON.parse(jsonContent);
 
-  console.log("data: ", data)
+  // console.log({ data })
 
   res.status(200).json({ data });
 }
