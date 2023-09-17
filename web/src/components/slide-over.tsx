@@ -1,5 +1,7 @@
+import { Dispatch, FormEvent, SetStateAction, useRef, useState } from "react";
+import Image from "next/image";
+
 import { CloseIcon, DownloadIcon } from "@chakra-ui/icons";
-import { AnimatePresence, motion } from "framer-motion";
 import {
   Box,
   Button,
@@ -10,14 +12,13 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { Dispatch, FormEvent, SetStateAction, useRef, useState } from "react";
-
-import { Coordinate, WaterData } from "@/types";
-import { Recommendations } from "./recommendations";
 import axios from "axios";
-import { formatCoordinate } from "@/utils/format-coordinate";
-import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+
+import { Recommendations } from "@/components/recommendations";
+import { Coordinate, WaterData } from "@/types";
 import { exportToPdf } from "@/utils/export-to-pdf";
+import { formatCoordinate } from "@/utils/format-coordinate";
 
 interface BackgroundImageElements extends HTMLFormControlsCollection {
   url: HTMLInputElement;
@@ -204,9 +205,21 @@ export function SlideOver({
               {waterData && !isLoading && (
                 <>
                   <Recommendations waterData={waterData} />
+                  {coord.bounty && (
+                    <>
+                      <Heading size="lg" mt={5}>
+                        Bounty
+                      </Heading>
+                      <Text className="mt-3">
+                        You will receive <b>${coord.bounty.toFixed(2)}</b> as a
+                        reward!
+                      </Text>
+                    </>
+                  )}
                   <Button
                     colorScheme="teal"
                     variant="solid"
+                    className="w-full"
                     leftIcon={<Icon as={DownloadIcon} />}
                     onClick={() => {
                       exportToPdf(
