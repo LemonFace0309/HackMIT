@@ -1,29 +1,29 @@
-import { useRef, cloneElement, useState } from "react";
-
-import axios from "axios";
+import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from '@chakra-ui/icons';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
-  Box,
-  useToken,
-  chakra,
-  Flex,
-  Heading,
-  UnorderedList,
-  ListItem,
-  Text,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Icon,
-  Grid,
-  Image,
-  Input,
-} from "@chakra-ui/react";
-import { AnimatePresence, motion } from "framer-motion";
-import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
+	Box,
+	Button,
+	ButtonGroup,
+	Flex,
+	Grid,
+	Heading,
+	Icon,
+	IconButton,
+	Image,
+	Input,
+	ListItem,
+	Text,
+	UnorderedList,
+	chakra,
+	useToken,
+} from '@chakra-ui/react';
+import { cloneElement, useRef, useState } from 'react';
 
-import { formatCoordinate } from "@/utils/format-coordinate";
-
-import { Coordinate } from "@/types";
+import { Coordinate } from '@/types';
+import { Recommendations } from './recommendations';
+import axios from 'axios';
+import { formatCoordinate } from '@/utils/format-coordinate';
+import waterData from '../data/water.json';
 
 type SlideOverProps = {
   coord: Coordinate | null;
@@ -113,51 +113,52 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 <b>{curHotspot.maxTime}</b>
               </Text> */}
 
-              <ButtonGroup
-                colorScheme="teal"
-                size="lg"
-                className="w-full flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
-              >
+							<ButtonGroup
+								colorScheme="teal"
+								size="lg"
+								className="w-full flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
+							>
+								<Button
+									variant="outline"
+									isLoading={isLoading}
+									className="flex-1 p-4"
+								>
+									Use Satellite Imagery
+								</Button>
                 <Button
-                  variant="outline"
-                  isLoading={isLoading}
-                  className="flex-1 p-4"
-                >
-                  Use Satellite Imagery
-                </Button>
-                <Button
-                  variant="solid"
-                  isLoading={isLoading}
-                  className="flex-1 p-4"
-                  onClick={() => fileUploadRef?.current?.click()}
-                >
-                  Upload a Photo
-                </Button>
-              </ButtonGroup>
-              <Heading as="h2" fontSize="3xl" mt={4}>
-                Recommendations
-              </Heading>
-              <UnorderedList>
-                {recommendations.map((rec, i) => {
-                  return (
-                    <ListItem mt={4} key={i}>
-                      {rec}
-                    </ListItem>
-                  );
-                })}
-              </UnorderedList>
-            </Box>
-          )}
-        </Box>
-        {/* Manually invoke this */}
-        <Input
-          type="file"
-          accept="image/*"
-          display="none"
-          ref={fileUploadRef}
-          onChange={uploadImage}
-        />
-      </motion.div>
-    </AnimatePresence>
-  );
+									variant="solid"
+									isLoading={isLoading}
+									className="flex-1 p-4"
+									onClick={() => fileUploadRef?.current?.click()}
+								>
+									Upload a Photo
+								</Button>
+							</ButtonGroup>
+							<Heading as="h2" fontSize="3xl" mt={4}>
+								Recommendations
+							</Heading>
+							<Recommendations waterData={waterData[0]} />
+							<UnorderedList>
+								{recommendations.map((rec, i) => {
+									return (
+										<ListItem mt={4} key={i}>
+											{rec}
+										</ListItem>
+									);
+								})}
+							</UnorderedList>
+						</Box>
+					)}
+				</Box>
+				{/* Manually invoke this */}
+				<Input
+					type="file"
+					accept="image/*"
+					display="none"
+					ref={fileUploadRef}
+					onChange={uploadImage}
+				/>
+			</motion.div>
+		</AnimatePresence>
+	);
 }
