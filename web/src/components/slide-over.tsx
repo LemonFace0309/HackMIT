@@ -33,7 +33,6 @@ type SlideOverProps = {
 export function SlideOver({ coord, onClose }: SlideOverProps) {
   const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -42,7 +41,6 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
   const recommendations: string[] = [];
 
   const uploadImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log("test");
     const selectedFile = event.target.files?.[0];
 
     if (!selectedFile) {
