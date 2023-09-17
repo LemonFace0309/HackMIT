@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, cloneElement, useState } from "react";
 
 import axios from "axios";
 import {
@@ -42,6 +42,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
   const recommendations: string[] = [];
 
   const uploadImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("test");
     const selectedFile = event.target.files?.[0];
 
     if (!selectedFile) {
