@@ -10,7 +10,7 @@ export default function MapPage() {
   return (
     <div>
       <Head>
-        <title>Map: Add better title</title>
+        <title>AquaGuard Map</title>
       </Head>
 
       <div className="w-screen h-screen">

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>TODO: Add better title</title>
+        <title>AquaGuard Homepage</title>
       </Head>
 
       <div className="relative w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500">

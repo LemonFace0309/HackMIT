@@ -90,7 +90,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 "> p": { mt: 4 },
               }}
             >
-              <Heading as="h1">Title</Heading>
+              <Heading as="h1">Water Details</Heading>
 
               <Text>
                 📍 Centered at{" "}
