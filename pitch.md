@@ -6,7 +6,7 @@ We harness AI-powered satellite and crowdsourced imagery to generate real-time w
 
 ### TLDR:
 
-1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) - that's 4.7 billion people. Yet vast water bodies remain unmonitored due to inadequate resources.
+1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) with 5.6 trillion in GDP expected to be lost due to water risk globally by 2050. Yet vast water bodies remain unmonitored due to inadequate resources.
 2. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to give an in-depth analysis of water quality.
 3. Our AI dashboard, powered by GPT-4, provides real-time water quality scores, health implications, and actionable insights, supported by both WHO and CDC metrics.
 4. Introduced gamification: Users earn rewards for their conservation actions, fostering a global community of water guardians.
