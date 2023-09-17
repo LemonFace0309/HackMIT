@@ -175,7 +175,6 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
               <Heading as="h2" fontSize="3xl" mt={4}>
                 Recommendations
               </Heading>
-              {/* Todo: Replace null with loading state */}
               {waterData && <Recommendations waterData={waterData} />}
             </Box>
           )}
