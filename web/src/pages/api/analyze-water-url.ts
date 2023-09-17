@@ -14,10 +14,6 @@ export default async function handler(
     return res.status(400).json("Image Required");
   }
 
-  // TODO(William)
-  // MAKE SURE THE DATA IS FORMATTED PROPERLY (TYPES ARE CORRECT) OR THINGS WILL BREAK
-  console.log(url)
-
   let prompt = `
   The following image is a image of a body of water taken by a smartphone. 
   Analyze the following water body's water quality. 
@@ -60,7 +56,6 @@ export default async function handler(
     ]
     }"
   `
-  console.log(prompt)
   const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
   });
