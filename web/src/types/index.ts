@@ -7,6 +7,15 @@ export type Coordinate = {
   lng: number;
 };
 
+export type Bounty = {
+	label: string;
+	image?: string;
+  urgency: number;
+	latitude: number;
+  longitude: number;
+  bounty: number;
+};
+
 export type WaterData = {
   image: formidable.File | undefined;
   Name: string;
@@ -20,8 +29,3 @@ export type WaterData = {
   "Recommendations to improve water quality": string[];
 };
 
-export type Bounty = {
-  city: "string";
-  latitude: number;
-  longitude: number;
-};
