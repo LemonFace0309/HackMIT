@@ -1,5 +1,3 @@
-
-
 🌊 **AquaGuard Pitch - HackMIT** 🌊
 
 AquaGuard: Harnessing AI-powered satellite analytics to democratize real-time water quality insights, transforming communities into proactive guardians for a resilient and sustainable aquatic ecosystem
