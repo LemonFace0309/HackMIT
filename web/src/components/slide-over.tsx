@@ -197,15 +197,16 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   Submit
                 </Button>
               </form>
+              {<Text></Text>}
               {imageUrl && <Image
                 src={imageUrl}
                 alt="Coin"
                 width={500}
                 height={450}
               />}
-              {imageUrl && !waterData && <Text>Waiting...</Text>}
+              {isLoading && <Text>Waiting...</Text>}
               {/* Todo: Replace null with loading state */}
-              {waterData && <Recommendations waterData={waterData} />}
+              {waterData && !isLoading && <Recommendations waterData={waterData} />}
             </Box>
           )}
         </Box>
