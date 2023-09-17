@@ -155,7 +155,7 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/99e8d59a-c369-478d-8d03
 
 ---
 
-## Why this is important
+## Why this is important, especially now!
 - Scale of Untracked Water Bodies: Many large lakes, rivers, and reservoirs are often monitored due to their significance. It's the smaller, decentralized water bodies that often fall through the cracks. These water bodies can still have significant local importance, serving communities, supporting ecosystems, or acting as potential indicators for larger regional environmental trends.
 
 - Emerging Concerns: With the advent of climate change, many regions are witnessing new phenomena like algal blooms in areas where they were previously rare. A tool like AquaGuard would be invaluable in providing real-time updates in such rapidly changing scenarios.
