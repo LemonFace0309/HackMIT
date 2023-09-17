@@ -11,11 +11,13 @@ import ReactMap, {
 import { ControlPanel } from "@/components/control-panel";
 import { SlideOver } from "@/components/slide-over";
 import { Pin } from "@/components/pin";
-import { Bounty, Coordinate } from "@/types";
+import { Bounty, Coordinate, WaterData } from "@/types";
 
 export function Map() {
   const mapRef = useRef<MapRef>(null);
   const [selectedCord, setSelectedCord] = useState<Coordinate | null>(null);
+  const [waterData, setWaterData] = useState<WaterData | null>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [viewState, setViewState] = useState({
     latitude: 42.3601,
     longitude: -71.0942,
@@ -30,10 +32,15 @@ export function Map() {
     });
   };
 
+  const onClose = () => {
+    setSelectedCord(null);
+    setWaterData(null);
+    setImageUrl(null);
+  };
+
   const onClick = (event: mapboxgl.MapLayerMouseEvent) => {
     if (selectedCord) {
-      setSelectedCord(null);
-      return;
+      return onClose();
     }
     setSelectedCord(event.lngLat);
   };
@@ -62,7 +69,14 @@ export function Map() {
           </Marker>
         )}
       </ReactMap>
-      <SlideOver coord={selectedCord} onClose={() => setSelectedCord(null)} />
+      <SlideOver
+        coord={selectedCord}
+        onClose={onClose}
+        waterData={waterData}
+        setWaterData={setWaterData}
+        imageUrl={imageUrl}
+        setImageUrl={setImageUrl}
+      />
       <ControlPanel onSelectBounty={onSelectBounty} />
     </div>
   );

@@ -1,10 +1,51 @@
 [
-  {
-    "label": "New York Tap Water",
-    "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
-    "urgency": 4,
-    "latitude": 40.6643,
-    "longitude": -73.9385,
-		"bounty": 2.54
-  }
+	{
+		"label": "Central Park Pond, New York",
+		"urgency": 4,
+		"latitude": 40.7652,
+		"longitude": -73.9793,
+		"bounty": 2.9
+	},
+	{
+		"label": "Lyon Charter Twp Pond, Michigan",
+		"urgency": 6,
+		"latitude": 42.436393,
+		"longitude": -83.570449,
+		"bounty": 3.2
+	},
+	{
+		"label": "Small pond in Massachusetts",
+		"urgency": 5,
+		"latitude": 42.511140,
+		"longitude": -71.324270,
+		"bounty": 3.5
+	},
+	{
+		"label": "Bog Pond in Harrison, ME",
+		"urgency": 7,
+		"latitude": 44.117214,
+		"longitude": -70.621232,
+		"bounty": 4.75
+	},
+	{
+		"label": "Small pond in Ohio",
+		"urgency": 3,
+		"latitude": 39.424653, 
+		"longitude": -83.073157,
+		"bounty": 2.45
+	},
+	{
+		"label": "Walden Pond, Massachusetts",
+		"urgency": 5,
+		"latitude": 42.4405,
+		"longitude": -71.3343,
+		"bounty": 2.8
+	},
+	{
+		"label": "Silver Lake, Waterloo",
+		"urgency": 4,
+		"latitude": 43.4668,
+		"longitude": -80.5167,
+		"bounty": 1.3
+	}
 ]

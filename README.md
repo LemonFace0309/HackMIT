@@ -1,5 +1,27 @@
 # HackMIT
 
+
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/b47fd97d-6527-40fe-8a49-96bcd3312c33
+
+
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/b41bc16b-df49-4c28-97e0-2605546152b4
+
+
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/dab6e4bf-17f3-433b-ba68-c37014d6870c
+
+
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/f13bc0e5-4876-4d96-9fcf-7834888ef5e7
+
+
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/950efcec-287e-4439-8139-f9dd9468095e
+
+
+
 It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
 
 Suppose you see a sudden influx of algae in a local pond, or that you pass by a local river but you notice it's all dried up, what would you do? The answer is unclear for most people, and that's the problem we want to solve.

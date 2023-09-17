@@ -1,21 +1,23 @@
-import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
+import { CloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Box,
   Button,
   ButtonGroup,
   Heading,
+  Icon,
   IconButton,
   Input,
   Text,
 } from "@chakra-ui/react";
-import { FormEvent, useRef, useState } from "react";
+import { Dispatch, FormEvent, SetStateAction, useRef, useState } from "react";
 
 import { Coordinate, WaterData } from "@/types";
 import { Recommendations } from "./recommendations";
 import axios from "axios";
 import { formatCoordinate } from "@/utils/format-coordinate";
 import Image from "next/image";
+import { exportToPdf } from "@/utils/export-to-pdf";
 
 interface BackgroundImageElements extends HTMLFormControlsCollection {
   url: HTMLInputElement;
@@ -28,13 +30,22 @@ interface BackgroundImageForm extends HTMLFormElement {
 type SlideOverProps = {
   coord: Coordinate | null;
   onClose: () => void;
+  waterData: WaterData | null;
+  setWaterData: Dispatch<SetStateAction<WaterData | null>>;
+  imageUrl: string | null;
+  setImageUrl: Dispatch<SetStateAction<string | null>>;
 };
 
-export function SlideOver({ coord, onClose }: SlideOverProps) {
+export function SlideOver({
+  coord,
+  onClose,
+  waterData,
+  setWaterData,
+  imageUrl,
+  setImageUrl,
+}: SlideOverProps) {
   const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [waterData, setWaterData] = useState<WaterData | null>(null);
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -54,7 +65,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
       const formData = new FormData();
       formData.append("image", selectedFile);
 
-      setImageUrl(URL.createObjectURL(selectedFile))
+      setImageUrl(URL.createObjectURL(selectedFile));
 
       const response = await axios.post("/api/analyze-water", formData, {
         headers: {
@@ -105,7 +116,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
         initial="closed"
         className="absolute top-0 bottom-0 left-0 w-full overflow-auto md:w-2/5 bg-white shadow-md z-10"
       >
-        <Box overflowY="auto" h="100%">
+        <Box id="assessment" overflowY="auto" h="100%">
           <IconButton
             position="absolute"
             top={10}
@@ -120,10 +131,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
               p={10}
               fontSize="xl"
               textShadow="0px 0px 20px rgba(0,0,0,0.5)"
-              id="printable"
-              sx={{
-                "> p": { mt: 4 },
-              }}
+              className="space-y-2"
             >
               <Heading as="h1">Water Details</Heading>
 
@@ -178,6 +186,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   Submit
                 </Button>
               </form>
+
               {imageUrl && (
                 <div className="relative w-full h-[200px] lg:h-[300px] mt-4 rounded-lg overflow-hidden">
                   <Image
@@ -188,10 +197,31 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   />
                 </div>
               )}
-              {isLoading && <Text>Analyzing image, please wait up to 30 seconds...</Text>}
+              {isLoading && (
+                <Text>Analyzing image, please wait up to 30 seconds...</Text>
+              )}
               {/* Todo: Replace null with loading state */}
               {waterData && !isLoading && (
-                <Recommendations waterData={waterData} />
+                <>
+                  <Recommendations waterData={waterData} />
+                  <Button
+                    colorScheme="teal"
+                    variant="solid"
+                    leftIcon={<Icon as={DownloadIcon} />}
+                    onClick={() => {
+                      exportToPdf(
+                        `Water Report [${formatCoordinate(
+                          coord.lng,
+                          "N",
+                          "S"
+                        )}, ${formatCoordinate(coord.lat, "E", "W")}]`
+                      );
+                      onClose();
+                    }}
+                  >
+                    Export Report
+                  </Button>
+                </>
               )}
             </Box>
           )}
