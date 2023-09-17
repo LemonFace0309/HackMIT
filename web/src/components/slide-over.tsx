@@ -9,12 +9,20 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { cloneElement, useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 import { Coordinate, WaterData } from "@/types";
 import { Recommendations } from "./recommendations";
 import axios from "axios";
 import { formatCoordinate } from "@/utils/format-coordinate";
+
+interface BackgroundImageElements extends HTMLFormControlsCollection {
+  url: HTMLInputElement;
+}
+
+interface BackgroundImageForm extends HTMLFormElement {
+  readonly elements: BackgroundImageElements;
+}
 
 type SlideOverProps = {
   coord: Coordinate | null;
@@ -59,8 +67,25 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
     setIsLoading(false);
   };
 
-  const updateImageUrl = () => {
-    return null;
+  const updateImageUrl = async (e: FormEvent<BackgroundImageForm>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsLoading(true);
+    const url = e.currentTarget.elements.url.value;
+
+    try {
+      const response = await axios.post("/api/analyze-water-url", {
+        url,
+      });
+
+      // setWaterData(response.data.data);
+
+      console.log("Upload successful:", response.data);
+    } catch (error) {
+      console.error("Error uploading image:", error);
+    }
+
+    setIsLoading(false);
   };
 
   return (
@@ -125,12 +150,16 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   Upload a Photo
                 </Button>
               </ButtonGroup>
-              <form className="w-full space-x-4 flex mt-4">
+              <form
+                className="w-full space-x-4 flex mt-4"
+                onSubmit={updateImageUrl}
+              >
                 <Input
-                  id="url"
+                  name="url"
                   placeholder="Image URL"
                   colorScheme="teal"
                   size="lg"
+                  required
                 />
                 <Button
                   colorScheme="teal"

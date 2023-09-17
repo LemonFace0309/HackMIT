@@ -7,13 +7,14 @@ export default async function handler(
   if (req.method !== "POST") {
     return res.status(405).end(); // Method Not Allowed
   }
-  const { image } = req.body;
+  const { url } = req.body;
 
-  if (!image) {
+  if (!url) {
     return res.status(400).json("Image Required");
   }
 
   // TODO(William)
+  // MAKE SURE THE DATA IS FORMATTED PROPERLY (TYPES ARE CORRECT) OR THINGS WILL BREAK
 
   const data = {};
 
