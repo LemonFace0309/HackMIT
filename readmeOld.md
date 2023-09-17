@@ -39,7 +39,7 @@ AquaGuard is an integrated AI-augmented satellite imagery system that monitors w
 ### How it works:
 1. users draw a polygon around a map (satellite imagery) to take a picture
 OR users take a pic
-2. we run the picture through a GPT-4 to analyze water quality
+2. we run the picture through a GPT-4 multi-modal model to analyze water quality
 3. we get results back with metrics, we will focus on water metrics from WHO (world health org), CDC (center for disease), 
 4. we rank the water area on a scale of 10, and also write down what the results were from the metrics
 5. we equip individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives and tools to report illegal dumping, we empower communities to take tangible action. 
