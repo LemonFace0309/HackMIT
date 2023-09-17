@@ -59,6 +59,10 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
     setIsLoading(false);
   };
 
+  const updateImageUrl = () => {
+    return null;
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -121,6 +125,24 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   Upload a Photo
                 </Button>
               </ButtonGroup>
+              <form className="w-full space-x-4 flex mt-4">
+                <Input
+                  id="url"
+                  placeholder="Image URL"
+                  colorScheme="teal"
+                  size="lg"
+                />
+                <Button
+                  colorScheme="teal"
+                  size="lg"
+                  type="submit"
+                  variant="solid"
+                  isLoading={isLoading}
+                  className="p-4"
+                >
+                  Submit
+                </Button>
+              </form>
               <Heading as="h2" fontSize="3xl" mt={4}>
                 Recommendations
               </Heading>
