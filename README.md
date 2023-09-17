@@ -1,6 +1,6 @@
 # AquaGuard
 
-
+## AI Image Analysis Demo (5 Different Bodies of Water)
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/b47fd97d-6527-40fe-8a49-96bcd3312c33
 
@@ -12,6 +12,7 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/f13bc0e5-4876-4d96-9fcf
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/950efcec-287e-4439-8139-f9dd9468095e
 
+## Community Features
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/03ae1d6e-0aa7-4dd5-9579-dc37b14fa133
 
