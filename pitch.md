@@ -37,7 +37,7 @@ The threats don't stop at humans. They ripple through our ecosystem, impacting w
 
 **Our Origin and Vision**
 
-Coming from Canada with our 5 great lakes, we are intensely passionate about our clean water. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devastating it would feel to be powerless in the face of water degradation.
+Coming from Canada with our 5 great lakes, we often take our clean water for granted. During the Boston Duck Tour, we were inspired by the previously famously populated Charles river to tackle the problem of ensuring clean water for all as we couldn't imagine how devastating it would feel to be powerless in the face of water degradation.
 
 One of our team members resides near a small lake which, all too often, faces drought. It's a disheartening sight, especially as local management and residents alike seem at a loss for solutions. This once-thriving body of water becomes an overlooked issue, even though its importance is universally acknowledged. There's a glaring absence of a streamlined channel to communicate with governmental bodies or authorities who could potentially address this, coupled with a lack of easily accessible resources for the community to address and remedy the situation.
 
@@ -127,7 +127,7 @@ Initially, AquaGuard's vision encompassed a myriad of features, from granular wa
 To optimize productivity, we adopted a 'stream' approach – segregating our team based on skillsets. This allowed for simultaneous work on data interpretation, AI integrations, and UI. Clearly defined roles ensured no overlaps, promoting efficient progression and synergy.
 
 **Fluid Data Visualization:**
-One of the significant challenges we embraced was converting intricate water data into user-friendly visuals. Engaging with tools and platforms to map out water quality across regions, we discovered the nuances of creating interfaces that were informative yet not overwhelming.
+One of the significant challenges we embraced was converting intricate water data from GIS data sources into user-friendly visuals. Engaging with tools and platforms to map out water quality across regions, we discovered the nuances of creating interfaces that were informative yet not overwhelming.
 
 **Navigating AI Waters:**
 Our integration with OpenAI's GPT-4 for data analysis was an enlightening journey. While unsuccessful, we explored the vast capabilities of AI through training our model in not just presenting but interpreting water data, leading to actionable insights and predictive analyses.
