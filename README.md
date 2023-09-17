@@ -20,38 +20,8 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/f13bc0e5-4876-4d96-9fcf
 
 https://github.com/LemonFace0309/HackMIT/assets/25058545/950efcec-287e-4439-8139-f9dd9468095e
 
+https://www.loom.com/share/44ed720af7c44c728561407500624e61?sid=8349b1a7-4c98-446d-8463-95e93fec64f8
 
-
-It is widely agreed upon that water is the most valuable resource, yet the majority of individuals are uninformed and powerless to improve the quality of local water bodies.
-
-Suppose you see a sudden influx of algae in a local pond, or that you pass by a local river but you notice it's all dried up, what would you do? The answer is unclear for most people, and that's the problem we want to solve.
-
-That's why we decided to build AquaGuard. Revolutionizing Water Quality Monitoring for a Sustainable Future
-
-Our mission is simple: to provide comprehensive water quality data to people worldwide, empowering everyone to protect the water they rely on for life and sustenance. Inspired by the once-famous but now polluted Charles River, we are determined to prevent others from witnessing their local water supplies degrade without the means to intervene.
-
-AquaGuard combines satellite and crowdsourced imagery with local wildlife and human population data to yield insightful implications about water quality. This multifaceted approach not only ensures the accuracy of our assessments but also sheds light on the intricate relationships between ecosystems and human communities.
-
-But we don't stop at data. AquaGuard equips individuals with the resources they need to safeguard their water sources effectively. From EPA registered algaecides to local vegetation planting initiatives, tools to report illegal dumping, and warnings about droughts, we empower communities to take tangible action.
-
-Our vision is simple: water is the quintessential enabler of life, and everyone, regardless of their resources, deserves access to information about the water they rely on. Join us at HackMIT and be a part of the AquaGuard revolution, as we work towards a sustainable future where water quality is a concern of the past. Together, we can ensure that no one is powerless in the face of water pollution, safeguarding the life-giving essence of our planet for the next generation.
-
-
-water quality + wildlife health + predictions???
-contextual powered AI recommendations & implications w/ context + LLMS 
-
-
-e.g. 
--# of ppl in this place (relying on it) 
--# this amt of wildlife 
-
-
-data viz dashboard (Charles)
-model to predict water quality (Mabel)
-Synthesize w/ APIs for wildlife health (Mabel)
-API to communicate (Charles & Mabel)
-LLMs w/ prompts (William)
-Business pitching (William)
 
 
 ## Potential Partnerships:
