@@ -1,6 +1,16 @@
-🌊 **AquaGuard - HackMIT** 🌊
+# 🌊 **AquaGuard - HackMIT** 🌊
 
-AquaGuard: Harnessing AI-powered satellite analytics to democratize real-time water quality insights, transforming communities into proactive guardians for a resilient and sustainable aquatic ecosystem
+AquaGuard: We empower all individuals with the data and tangible insights to safeguard their local water sources regardless of their location from the palm of their hands.
+
+We harness AI-powered satellite and crowdsourced imagery to generate real-time water quality insights and equips individuals with the resources they need to safeguard their water sources effectively - we empower communities to take tangible action.
+
+### TLDR:
+
+1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) with 5.6 trillion in GDP expected to be lost due to water risk globally by 2050 (Source: [World Bank](https://www.worldbank.org/en/topic/water/overview#:~:text=Economic%20growth%20is%20a%20%22thirsty,%2C%20health%2C%20income%20and%20prosperity.)).
+2. Yet vast water bodies remain unmonitored due to inadequate resources, given there are over 3 million lakes in the US alone.
+3. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to democratize  water quality analysis for all regardless of equipment and location.
+4. Our AI dashboard, powered by GPT-4, provides real-time water quality scores, health implications, and actionable insights.
+5. Designed for both remote areas in developed nations and underserved regions globally, AquaGuard empowers all to champion health equity and environmental stewardship with the device in the palm of their hand!
 
 ---
 
@@ -14,7 +24,13 @@ For most, the answer is: Nothing. Not because they don't care, but because they 
 
 **The Problem:**
 
-In today's world, water—the most vital resource of all—is under threat. Yet, many feel powerless against the rapid urbanization, industrial discharges, and pollution affecting our water bodies. The threats don't stop at humans. They ripple through our ecosystem, impacting wildlife and the delicate balance of nature. While there are tools addressing these issues in isolation, we lack an integrated solution that brings it all together.
+In today's world, water—the most vital resource of all—is under threat. Yet, many feel powerless against the rapid urbanization, industrial discharges, and pollution affecting our water bodies. 
+
+By 2025, it's estimated that two-thirds of the world's population may face water shortages with 1.8 billion living in absolute water scarcity, and ecosystems around the world will suffer even more. (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.))
+
+What does that mean economically? The global economy could lose up to 6% of GDP due to water challenges by 2050, including water scarcity, water stress, and flooding - that's 5.6 trillion in GDP lost worldwide. (Source: [World Bank](https://www.mckinsey.com/capabilities/sustainability/our-insights/water-a-human-and-business-priority))
+
+The threats don't stop at humans. They ripple through our ecosystem, impacting wildlife and the delicate balance of nature. While there are tools addressing these issues in isolation, we lack an integrated solution that brings it all together.
 
 ---
 
@@ -89,6 +105,51 @@ Our roadmap is dynamic. We aim to:
 - Develop a bespoke model for water quality analysis.
 - Provide region-specific resources and solutions.
 - Prioritize user data privacy and security.
+
+---
+
+## What We Learned for AquaGuard
+
+---
+
+**The Depths of Water Crisis:**
+Diving into the project, we quickly unearthed the extent of global water degradation. Our 
+research led us to startling revelations about the current methods of water quality assessment and the gaps they left. 
+
+We gained profound insights into urbanization, industrial pollution, and the cascading effects these issues have on ecosystems and communities. Also what we learned what "New Pond Syndrome" was!
+
+**Streamlining, Not Overflowing:**
+Initially, AquaGuard's vision encompassed a myriad of features, from granular water pollutant monitoring to broad-scale environmental impacts. The 24-hour hackathon constraint made us realize the importance of honing in on our core objectives. We chose to focus on a blend of satellite and crowdsourced data, ensuring real-time quality measures without overstretching our goals.
+
+**The Flow of Teamwork:**
+To optimize productivity, we adopted a 'stream' approach – segregating our team based on skillsets. This allowed for simultaneous work on data interpretation, AI integrations, and UI. Clearly defined roles ensured no overlaps, promoting efficient progression and synergy.
+
+**Fluid Data Visualization:**
+One of the significant challenges we embraced was converting intricate water data into user-friendly visuals. Engaging with tools and platforms to map out water quality across regions, we discovered the nuances of creating interfaces that were informative yet not overwhelming.
+
+**Navigating AI Waters:**
+Our integration with OpenAI's GPT-4 for data analysis was an enlightening journey. While unsuccessful, we explored the vast capabilities of AI through training our model in not just presenting but interpreting water data, leading to actionable insights and predictive analyses.
+
+---
+
+### HackMIT Core Memories
+
+Met Ali Partovi after his talk!
+
+<img width="593" alt="Screen Shot 2023-09-17 at 8 36 27 AM" src="https://github.com/LemonFace0309/HackMIT/assets/25058545/8ecee2c5-70ef-4b89-9882-e50e56d6e8c5">
+
+Took a picture with the MIT beaver
+
+![IMG_6502](https://github.com/LemonFace0309/HackMIT/assets/25058545/d0917c5e-8a68-4c69-960b-7f1c9e726624)
+
+Saw a rabbit doing track and field
+
+https://github.com/LemonFace0309/HackMIT/assets/25058545/99e8d59a-c369-478d-8d03-433192aaaa16
+
+
+---
+
+**Conclusion:** AquaGuard wasn't just a project; it was a deep dive into understanding and addressing one of the world's most pressing issues. We emerged not just with a potential solution but with a renewed respect for the significance of clean water in our lives.
 
 ---
 
