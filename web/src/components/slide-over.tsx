@@ -153,6 +153,11 @@ export function SlideOver({
                   variant="outline"
                   isLoading={isLoading}
                   className="flex-1 p-4"
+                  onClick={() =>
+                    alert(
+                      "Satellite imagery coming soon! 🥳 Please submit an imageURL for now."
+                    )
+                  }
                 >
                   Use Satellite Imagery
                 </Button>
