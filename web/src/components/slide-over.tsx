@@ -1,29 +1,29 @@
-import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from '@chakra-ui/icons';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
+import { AnimatePresence, motion } from "framer-motion";
 import {
-	Box,
-	Button,
-	ButtonGroup,
-	Flex,
-	Grid,
-	Heading,
-	Icon,
-	IconButton,
-	Image,
-	Input,
-	ListItem,
-	Text,
-	UnorderedList,
-	chakra,
-	useToken,
-} from '@chakra-ui/react';
-import { cloneElement, useRef, useState } from 'react';
+  Box,
+  Button,
+  ButtonGroup,
+  Flex,
+  Grid,
+  Heading,
+  Icon,
+  IconButton,
+  Image,
+  Input,
+  ListItem,
+  Text,
+  UnorderedList,
+  chakra,
+  useToken,
+} from "@chakra-ui/react";
+import { cloneElement, useRef, useState } from "react";
 
-import { Coordinate } from '@/types';
-import { Recommendations } from './recommendations';
-import axios from 'axios';
-import { formatCoordinate } from '@/utils/format-coordinate';
-import waterData from '../data/water.json';
+import { Coordinate, WaterData } from "@/types";
+import { Recommendations } from "./recommendations";
+import axios from "axios";
+import { formatCoordinate } from "@/utils/format-coordinate";
+import waterData from "../data/water.json";
 
 type SlideOverProps = {
   coord: Coordinate | null;
@@ -111,52 +111,52 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 <b>{curHotspot.maxTime}</b>
               </Text> */}
 
-							<ButtonGroup
-								colorScheme="teal"
-								size="lg"
-								className="w-full flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
-							>
-								<Button
-									variant="outline"
-									isLoading={isLoading}
-									className="flex-1 p-4"
-								>
-									Use Satellite Imagery
-								</Button>
+              <ButtonGroup
+                colorScheme="teal"
+                size="lg"
+                className="w-full flex flex-col lg:flex-row mt-4 space-y-4 lg:space-y-0 space-x-0 lg:space-x-4"
+              >
                 <Button
-									variant="solid"
-									isLoading={isLoading}
-									className="flex-1 p-4"
-									onClick={() => fileUploadRef?.current?.click()}
-								>
-									Upload a Photo
-								</Button>
-							</ButtonGroup>
-							<Heading as="h2" fontSize="3xl" mt={4}>
-								Recommendations
-							</Heading>
-							<Recommendations waterData={waterData[0]} />
-							<UnorderedList>
-								{recommendations.map((rec, i) => {
-									return (
-										<ListItem mt={4} key={i}>
-											{rec}
-										</ListItem>
-									);
-								})}
-							</UnorderedList>
-						</Box>
-					)}
-				</Box>
-				{/* Manually invoke this */}
-				<Input
-					type="file"
-					accept="image/*"
-					display="none"
-					ref={fileUploadRef}
-					onChange={uploadImage}
-				/>
-			</motion.div>
-		</AnimatePresence>
-	);
+                  variant="outline"
+                  isLoading={isLoading}
+                  className="flex-1 p-4"
+                >
+                  Use Satellite Imagery
+                </Button>
+                <Button
+                  variant="solid"
+                  isLoading={isLoading}
+                  className="flex-1 p-4"
+                  onClick={() => fileUploadRef?.current?.click()}
+                >
+                  Upload a Photo
+                </Button>
+              </ButtonGroup>
+              <Heading as="h2" fontSize="3xl" mt={4}>
+                Recommendations
+              </Heading>
+              <Recommendations waterData={waterData[0] as WaterData} />
+              <UnorderedList>
+                {recommendations.map((rec, i) => {
+                  return (
+                    <ListItem mt={4} key={i}>
+                      {rec}
+                    </ListItem>
+                  );
+                })}
+              </UnorderedList>
+            </Box>
+          )}
+        </Box>
+        {/* Manually invoke this */}
+        <Input
+          type="file"
+          accept="image/*"
+          display="none"
+          ref={fileUploadRef}
+          onChange={uploadImage}
+        />
+      </motion.div>
+    </AnimatePresence>
+  );
 }

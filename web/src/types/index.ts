@@ -6,14 +6,13 @@ export type Coordinate = {
 };
 
 export type WaterData = {
-  name: string;
+  Name: string;
   "Score out of 10": number;
+  "Explanation for score": string;
   "Water Clarity": string;
   Bioindicators: string;
   "Water Color": string;
   "Presence of Algae": string;
-  "On Wildlife": string;
-  "On Human Population": string;
-  "Other Stakeholders": string;
-  "3 Recommendations to improve water quality": string[];
+  "Implications of water quality": string[];
+  "Recommendations to improve water quality": string[];
 };
