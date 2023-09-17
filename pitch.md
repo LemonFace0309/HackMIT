@@ -6,7 +6,7 @@ We harness AI-powered satellite and crowdsourced imagery to generate real-time w
 
 ### TLDR:
 
-1. Water degradation affects millions globally, yet vast water bodies remain unmonitored due to inadequate resources.
+1. According to the UN, two-thirds of the world will face water shortages by 2025 (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.)) - that's 4.7 billion people. Yet vast water bodies remain unmonitored due to inadequate resources.
 2. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to give an in-depth analysis of water quality.
 3. Our AI dashboard, powered by GPT-4, provides real-time water quality scores, health implications, and actionable insights, supported by both WHO and CDC metrics.
 4. Introduced gamification: Users earn rewards for their conservation actions, fostering a global community of water guardians.
@@ -28,9 +28,9 @@ For most, the answer is: Nothing. Not because they don't care, but because they 
 
 In today's world, water—the most vital resource of all—is under threat. Yet, many feel powerless against the rapid urbanization, industrial discharges, and pollution affecting our water bodies. 
 
-By 2025, it's estimated that two-thirds of the world's population may face water shortages, and ecosystems around the world will suffer even more. (Source: World Wildlife Fund)
+By 2025, it's estimated that two-thirds of the world's population may face water shortages with 1.8 billion living in absolute water scarcity, and ecosystems around the world will suffer even more. (Source: [United Nations](https://press.un.org/en/2016/sgsm17610.doc.htm#:~:text=By%202025%2C%20nearly%201.8%20billion,carbon%20capture%20and%20storage%20systems.))
 
-What does that mean economically? By 2030, the global economy could lose up to 6% of GDP due to water challenges, including water scarcity, water stress, and flooding. (Source: World Bank)
+What does that mean economically? The global economy could lose up to 6% of GDP due to water challenges by 2050, including water scarcity, water stress, and flooding - that's 5.6 trillion in GDP lost worldwide. (Source: [World Bank](https://www.mckinsey.com/capabilities/sustainability/our-insights/water-a-human-and-business-priority))
 
 The threats don't stop at humans. They ripple through our ecosystem, impacting wildlife and the delicate balance of nature. While there are tools addressing these issues in isolation, we lack an integrated solution that brings it all together.
 
