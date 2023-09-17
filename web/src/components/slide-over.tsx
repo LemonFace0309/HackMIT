@@ -9,7 +9,7 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { FormEvent, useRef, useState } from "react";
+import { Dispatch, FormEvent, SetStateAction, useRef, useState } from "react";
 
 import { Coordinate, WaterData } from "@/types";
 import { Recommendations } from "./recommendations";
@@ -28,12 +28,18 @@ interface BackgroundImageForm extends HTMLFormElement {
 type SlideOverProps = {
   coord: Coordinate | null;
   onClose: () => void;
+  waterData: WaterData | null;
+  setWaterData: Dispatch<SetStateAction<WaterData | null>>;
 };
 
-export function SlideOver({ coord, onClose }: SlideOverProps) {
+export function SlideOver({
+  coord,
+  onClose,
+  waterData,
+  setWaterData,
+}: SlideOverProps) {
   const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [waterData, setWaterData] = useState<WaterData | null>(null);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
@@ -54,7 +60,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
       const formData = new FormData();
       formData.append("image", selectedFile);
 
-      setImageUrl(URL.createObjectURL(selectedFile))
+      setImageUrl(URL.createObjectURL(selectedFile));
 
       const response = await axios.post("/api/analyze-water", formData, {
         headers: {
@@ -117,13 +123,11 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
           />
           {!!coord && (
             <Box
+              id="assessment"
               p={10}
               fontSize="xl"
               textShadow="0px 0px 20px rgba(0,0,0,0.5)"
-              id="printable"
-              sx={{
-                "> p": { mt: 4 },
-              }}
+              className="space-y-2"
             >
               <Heading as="h1">Water Details</Heading>
 
@@ -178,6 +182,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   Submit
                 </Button>
               </form>
+
               {imageUrl && (
                 <div className="relative w-full h-[200px] lg:h-[300px] mt-4 rounded-lg overflow-hidden">
                   <Image
@@ -188,7 +193,9 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   />
                 </div>
               )}
-              {isLoading && <Text>Analyzing image, please wait up to 30 seconds...</Text>}
+              {isLoading && (
+                <Text>Analyzing image, please wait up to 30 seconds...</Text>
+              )}
               {/* Todo: Replace null with loading state */}
               {waterData && !isLoading && (
                 <Recommendations waterData={waterData} />

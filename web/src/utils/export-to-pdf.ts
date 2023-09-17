@@ -17,6 +17,7 @@ const iterateChildren = (
 
 export function exportToPdf(filename: string) {
   const element = document.getElementById("assessment");
+  if (!element) return;
   iterateChildren(element, (child) => {
     if (child.tagName.toLowerCase() === "button") {
       child.style.display = "none";
