@@ -57,7 +57,7 @@ export const Recommendations = ({ waterData }: RecommendationsProps) => {
       <List mt={3}>
 				{waterData['Implications of water quality'].map(
 					(recommendation, index) => (
-						<ListItem key={index}>{recommendation}</ListItem>
+						<ListItem key={index}>{index + 1}. {recommendation}</ListItem>
 					)
 				)}
 			</List>
@@ -68,7 +68,7 @@ export const Recommendations = ({ waterData }: RecommendationsProps) => {
 			<List mt={3}>
 				{waterData['Recommendations to improve water quality'].map(
 					(recommendation, index) => (
-						<ListItem key={index}>{recommendation}</ListItem>
+						<ListItem key={index}>{index + 1}. {recommendation}</ListItem>
 					)
 				)}
 			</List>
