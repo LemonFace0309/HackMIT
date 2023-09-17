@@ -29,4 +29,3 @@ export type WaterData = {
   "Recommendations to improve water quality": string[];
 };
 
-

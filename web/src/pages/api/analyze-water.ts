@@ -49,6 +49,7 @@ export default async function handler(
 
   if (!data) {
     // TODO(William): Add node script here to process and return results
+    console.log(fields.imageUrl)
     data = null; // todo
   }
 
