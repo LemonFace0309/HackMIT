@@ -138,11 +138,11 @@ Our integration with OpenAI's GPT-4 for data analysis was an enlightening journe
 
 Met Ali Partovi after his talk!
 
-<img width="593" alt="Screen Shot 2023-09-17 at 8 36 27 AM" src="https://github.com/LemonFace0309/HackMIT/assets/25058545/8ecee2c5-70ef-4b89-9882-e50e56d6e8c5">
+<img width="561" alt="Screen Shot 2023-09-17 at 2 42 10 PM" src="https://github.com/LemonFace0309/HackMIT/assets/25058545/a93c8b30-b015-4d41-8a40-6468f042c21e">
 
 Took a picture with the MIT beaver
 
-![IMG_6502](https://github.com/LemonFace0309/HackMIT/assets/25058545/d0917c5e-8a68-4c69-960b-7f1c9e726624)
+https://github.com/LemonFace0309/HackMIT/assets/25058545/89e396de-f4c9-4b76-bac9-3a2952945db8
 
 Saw a rabbit doing track and field
 
