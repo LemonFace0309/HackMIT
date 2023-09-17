@@ -1,18 +1,18 @@
 [
   {
     "Name": "clear.jpg",
-    "1. Score out of 10": 9,
-    "2. Explanation for score": "The water appears clean and clear with no visible signs of pollutants or excessive algae. Although certain parameters of water quality, such as potential biological or chemical pollutants, cannot be assessed visually and thus prevents a perfect score.",
-    "3. Water Clarity": "Clear, with clear reflections visible indicating high transparency",
-    "4. Bioindicators": "No obvious signs of excessive algae or other pollutant indicators",
-    "5. Water Color": "Blue",
-    "6. Presence of Algae": "Not visibly noticeable",
-    "7. Implications of water quality": [
+    "Score out of 10": 9,
+    "Explanation for score": "The water appears clean and clear with no visible signs of pollutants or excessive algae. Although certain parameters of water quality, such as potential biological or chemical pollutants, cannot be assessed visually and thus prevents a perfect score.",
+    "Water Clarity": "Clear, with clear reflections visible indicating high transparency",
+    "Bioindicators": "No obvious signs of excessive algae or other pollutant indicators",
+    "Water Color": "Blue",
+    "Presence of Algae": "Not visibly noticeable",
+    "Implications of water quality": [
       "Positive for Wildlife: Good water quality suggests a healthy environment for aquatic and other local species",
       "Positive for Human population: Clear water suggests the water body is safe for recreational uses",
       "Positive for Other Stakeholders (e.g. local government, conservation organisations): Indicates effective local management of the water body environment and health"
     ],
-    "8. Recommendations to improve water quality":[
+    "Recommendations to improve water quality":[
       "Carry out regular testing for potential biological and chemical pollutants that cannot be assessed visually to ensure water safety",
       "Maintain regular clean-ups of the surrounding areas to prevent potential contamination from litter or land waste",
       "Consider implementing measures to control run-off during heavy precipitation to prevent potential contamination"
