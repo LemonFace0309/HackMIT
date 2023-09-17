@@ -76,6 +76,12 @@ export function SlideOver({
 
       setWaterData(response.data.data);
 
+      if (!response.data.data) {
+        alert(
+          "We currently don't fully support image upload! 😭 Please submit an imageURL for now."
+        );
+      }
+
       console.log("Upload successful:", response.data);
     } catch (error) {
       console.error("Error uploading image:", error);
