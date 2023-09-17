@@ -155,6 +155,15 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/99e8d59a-c369-478d-8d03
 
 ---
 
+## Next steps: 
+- add wildlife data 
+- add natural distaster event data
+- train a specific model for water quality analysis based on satellite or camera imagery.
+- provide localized resources
+- Ensure that the location data, especially from individual users, is anonymized and secure. Users might be hesitant to use the app if they feel their data could be misused.
+
+---
+
 **Closing:**
 
 Join us in this AquaGuard revolution. Together, let's ensure that when someone sees a polluted pond or a drying river, they don't feel powerless. Instead, they feel equipped, informed, and ready to make a change.

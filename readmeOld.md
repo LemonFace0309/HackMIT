@@ -56,13 +56,6 @@ OR users take a pic
 ## Users
 - users in remote areas in developed countries or people in non-developed countries where water quality is not as measured
 
-## next steps: 
-- add wildlife data 
-- add natural distaster event data
-- train a specific model for water quality analysis based on satellite or camera imagery.
-- provide localized resources
-- Ensure that the location data, especially from individual users, is anonymized and secure. Users might be hesitant to use the app if they feel their data could be misused.
-
 
 # Mini pitch for gov
 ### AquaGuard for Government Agencies
