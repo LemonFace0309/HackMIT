@@ -4,7 +4,7 @@
 
 AquaGuard & Generative AI: A Natural Fit
 
-AquaGuard harnesses the power of GPT-4, a state-of-the-art generative AI, to analyze vast amounts of water quality data sourced both from satellites and crowdsourced efforts. With the integration of this AI, our platform can not only provide real-time water quality scores but also interpret the implications for human and wildlife health. In essence, we're bridging the gap between raw data and actionable insights, using generative AI to translate complex information into tangible, easy-to-understand visuals and predictions.
+AquaGuard harnesses the power of GPT-4 multi modal model, to analyze vast amounts of water quality data sourced both from satellites and crowdsourced efforts. With the integration of this AI, our platform can not only provide real-time water quality scores but also interpret the implications for human and wildlife health. In essence, we're bridging the gap between raw data and actionable insights, using generative AI to translate complex information into tangible, easy-to-understand visuals and predictions.
 
 Novelty & Depth
 
