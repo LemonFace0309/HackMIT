@@ -6,10 +6,6 @@
 Diving into the project, we quickly unearthed the extent of global water degradation. Our 
 research led us to startling revelations about the current methods of water quality assessment and the gaps they left. 
 
-By 2025, it's estimated that two-thirds of the world's population may face water shortages, and ecosystems around the world will suffer even more. (Source: World Wildlife Fund)
-
-What does that mean economically? By 2030, the global economy could lose up to 6% of GDP due to water challenges, including water scarcity, water stress, and flooding. (Source: World Bank)
-
 We gained profound insights into urbanization, industrial pollution, and the cascading effects these issues have on ecosystems and communities. Also what we learned what "New Pond Syndrome" was!
 
 **Streamlining, Not Overflowing:**
