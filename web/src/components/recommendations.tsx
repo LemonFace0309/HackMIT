@@ -39,13 +39,13 @@ export const Recommendations = ({ waterData }: RecommendationsProps) => {
 				Water Details
 			</Heading>
 			<Text mt={3}>
-				<b>Clarity:</b> {waterData['Water Clarity']}
+				<b>Water Clarity:</b> {waterData['Water Clarity']}
 			</Text>
 			<Text mt={3}>
 				<b>Bioindicators:</b> {waterData['Bioindicators']}
 			</Text>
 			<Text mt={3}>
-				<b>Color:</b> {waterData['Water Color']}
+				<b>Water Color:</b> {waterData['Water Color']}
 			</Text>
 			<Text mt={3}>
 				<b>Presence of Algae:</b> {waterData['Presence of Algae']}
@@ -54,7 +54,13 @@ export const Recommendations = ({ waterData }: RecommendationsProps) => {
 			<Heading size="lg" mt={5}>
 				Implications
 			</Heading>
-			<Text mt={3}>{waterData['Implications of water quality']}</Text>
+      <List mt={3}>
+				{waterData['Implications of water quality'].map(
+					(recommendation, index) => (
+						<ListItem key={index}>{recommendation}</ListItem>
+					)
+				)}
+			</List>
 
 			<Heading size="lg" mt={5}>
 				Recommendations to Improve

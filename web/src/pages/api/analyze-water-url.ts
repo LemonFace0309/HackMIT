@@ -76,7 +76,7 @@ export default async function handler(
   });
 
   // console.log(response);
-  // console.log(response.choices[0].message.content);
+  console.log(response.choices[0].message.content);
 
   let content = response.choices[0].message.content || "";
 
