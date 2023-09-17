@@ -37,7 +37,10 @@ export default async function handler(
   }
 
   const allWaterData = JSON.parse(
-    fs.readFileSync(path.join("src", "data", "water.json"), "utf-8")
+    fs.readFileSync(
+      path.join(process.cwd(), "src", "data", "water.json"),
+      "utf-8"
+    )
   );
 
   let data = allWaterData.find(
