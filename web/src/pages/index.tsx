@@ -1,10 +1,11 @@
+import "mapbox-gl/dist/mapbox-gl.css";
+
 import * as React from "react";
-import Head from "next/head";
-import Link from "next/link";
 
 import { Button, ButtonGroup } from "@chakra-ui/react";
 
-import "mapbox-gl/dist/mapbox-gl.css";
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <title>AquaGuard Homepage</title>
       </Head>
 
-      <div className="relative w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-8">
+      <div className="relative w-screen h-screen bg-gradient-to-r from-cyan-900 to-cyan-700 p-8">
         <div className="w-full h-full flex justify-center items-center flex-col z-10 text-white space-y-8">
           <h1 className="text-3xl lg:text-8xl font-bold">AquaGuard</h1>
           <h2 className="text-xl lg:text-4xl text-center">
