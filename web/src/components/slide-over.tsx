@@ -204,7 +204,7 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                 width={500}
                 height={450}
               />}
-              {isLoading && <Text>Waiting...</Text>}
+              {isLoading && <Text>Analyzing image, please wait up to 30 seconds...</Text>}
               {/* Todo: Replace null with loading state */}
               {waterData && !isLoading && <Recommendations waterData={waterData} />}
             </Box>
