@@ -3,7 +3,14 @@
 ---
 
 **The Depths of Water Crisis:**
-Diving into the project, we quickly unearthed the extent of global water degradation. Our research led us to startling revelations about the current methods of water quality assessment and the gaps they left. We gained profound insights into urbanization, industrial pollution, and the cascading effects these issues have on ecosystems and communities. Also what we learned what "New Pond Syndrome" was.
+Diving into the project, we quickly unearthed the extent of global water degradation. Our 
+research led us to startling revelations about the current methods of water quality assessment and the gaps they left. 
+
+By 2025, it's estimated that two-thirds of the world's population may face water shortages, and ecosystems around the world will suffer even more. (Source: World Wildlife Fund)
+
+What does that mean economically? By 2030, the global economy could lose up to 6% of GDP due to water challenges, including water scarcity, water stress, and flooding. (Source: World Bank)
+
+We gained profound insights into urbanization, industrial pollution, and the cascading effects these issues have on ecosystems and communities. Also what we learned what "New Pond Syndrome" was!
 
 **Streamlining, Not Overflowing:**
 Initially, AquaGuard's vision encompassed a myriad of features, from granular water pollutant monitoring to broad-scale environmental impacts. The 24-hour hackathon constraint made us realize the importance of honing in on our core objectives. We chose to focus on a blend of satellite and crowdsourced data, ensuring real-time quality measures without overstretching our goals.
@@ -15,7 +22,16 @@ To optimize productivity, we adopted a 'stream' approach – segregating our tea
 One of the significant challenges we embraced was converting intricate water data into user-friendly visuals. Engaging with tools and platforms to map out water quality across regions, we discovered the nuances of creating interfaces that were informative yet not overwhelming.
 
 **Navigating AI Waters:**
-Our integration with generative AI models like GPT-4 for data analysis was an enlightening journey. We explored the vast capabilities of AI in not just presenting but interpreting water data, leading to actionable insights and predictive analyses.
+Our integration with OpenAI's GPT-4 for data analysis was an enlightening journey. While unsuccessful, we explored the vast capabilities of AI through training our model in not just presenting but interpreting water data, leading to actionable insights and predictive analyses.
+
+---
+
+**HackMIT Core Memories**
+
+Met Ali Partovi after his talk!
+
+Took a picture with the beaver
+
 
 ---
 
