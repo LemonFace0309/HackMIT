@@ -1,10 +1,11 @@
-import { AddIcon, CloseIcon, LinkIcon, MinusIcon } from "@chakra-ui/icons";
+import { CloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Box,
   Button,
   ButtonGroup,
   Heading,
+  Icon,
   IconButton,
   Input,
   Text,
@@ -16,6 +17,7 @@ import { Recommendations } from "./recommendations";
 import axios from "axios";
 import { formatCoordinate } from "@/utils/format-coordinate";
 import Image from "next/image";
+import { exportToPdf } from "@/utils/export-to-pdf";
 
 interface BackgroundImageElements extends HTMLFormControlsCollection {
   url: HTMLInputElement;
@@ -30,6 +32,8 @@ type SlideOverProps = {
   onClose: () => void;
   waterData: WaterData | null;
   setWaterData: Dispatch<SetStateAction<WaterData | null>>;
+  imageUrl: string | null;
+  setImageUrl: Dispatch<SetStateAction<string | null>>;
 };
 
 export function SlideOver({
@@ -37,10 +41,11 @@ export function SlideOver({
   onClose,
   waterData,
   setWaterData,
+  imageUrl,
+  setImageUrl,
 }: SlideOverProps) {
   const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -111,7 +116,7 @@ export function SlideOver({
         initial="closed"
         className="absolute top-0 bottom-0 left-0 w-full overflow-auto md:w-2/5 bg-white shadow-md z-10"
       >
-        <Box overflowY="auto" h="100%">
+        <Box id="assessment" overflowY="auto" h="100%">
           <IconButton
             position="absolute"
             top={10}
@@ -123,7 +128,6 @@ export function SlideOver({
           />
           {!!coord && (
             <Box
-              id="assessment"
               p={10}
               fontSize="xl"
               textShadow="0px 0px 20px rgba(0,0,0,0.5)"
@@ -198,7 +202,26 @@ export function SlideOver({
               )}
               {/* Todo: Replace null with loading state */}
               {waterData && !isLoading && (
-                <Recommendations waterData={waterData} />
+                <>
+                  <Recommendations waterData={waterData} />
+                  <Button
+                    colorScheme="teal"
+                    variant="solid"
+                    leftIcon={<Icon as={DownloadIcon} />}
+                    onClick={() => {
+                      exportToPdf(
+                        `Water Report [${formatCoordinate(
+                          coord.lng,
+                          "N",
+                          "S"
+                        )}, ${formatCoordinate(coord.lat, "E", "W")}]`
+                      );
+                      onClose();
+                    }}
+                  >
+                    Export Report
+                  </Button>
+                </>
               )}
             </Box>
           )}

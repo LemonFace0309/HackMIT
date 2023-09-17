@@ -17,6 +17,7 @@ export function Map() {
   const mapRef = useRef<MapRef>(null);
   const [selectedCord, setSelectedCord] = useState<Coordinate | null>(null);
   const [waterData, setWaterData] = useState<WaterData | null>(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [viewState, setViewState] = useState({
     latitude: 42.3601,
     longitude: -71.0942,
@@ -31,11 +32,15 @@ export function Map() {
     });
   };
 
+  const onClose = () => {
+    setSelectedCord(null);
+    setWaterData(null);
+    setImageUrl(null);
+  };
+
   const onClick = (event: mapboxgl.MapLayerMouseEvent) => {
     if (selectedCord) {
-      setWaterData(null)
-      setSelectedCord(null);
-      return;
+      return onClose();
     }
     setSelectedCord(event.lngLat);
   };
@@ -64,7 +69,14 @@ export function Map() {
           </Marker>
         )}
       </ReactMap>
-      <SlideOver coord={selectedCord} onClose={() => setSelectedCord(null)} waterData={waterData} setWaterData={setWaterData} />
+      <SlideOver
+        coord={selectedCord}
+        onClose={onClose}
+        waterData={waterData}
+        setWaterData={setWaterData}
+        imageUrl={imageUrl}
+        setImageUrl={setImageUrl}
+      />
       <ControlPanel onSelectBounty={onSelectBounty} />
     </div>
   );

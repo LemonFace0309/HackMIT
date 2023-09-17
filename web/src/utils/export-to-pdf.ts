@@ -19,12 +19,23 @@ export function exportToPdf(filename: string) {
   const element = document.getElementById("assessment");
   if (!element) return;
   iterateChildren(element, (child) => {
-    if (child.tagName.toLowerCase() === "button") {
+    if (
+      child.tagName.toLowerCase() === "button" ||
+      child.tagName.toLowerCase() === "input"
+    ) {
       child.style.display = "none";
     }
+    if (child.tagName.toLowerCase() === "h2") {
+      child.style.textAlign = "center";
+      child.style.width = "100%";
+      child.style.height = "16px"; // really rough fix
+    }
+    child.style.position = "flex";
+    child.style.justifyContent = "center";
+    child.style.alignItems = "center";
     child.style.color = "black";
     child.style.textShadow = "none";
-    child.style.fontSize = `12px`;
+    child.style.fontSize = `16px`;
   });
   html2canvas(element).then((canvas: any) => {
     const imgData = canvas.toDataURL("image/png");
