@@ -21,6 +21,9 @@ export default function Home() {
           <Heading as="h1" size="4xl" noOfLines={1}>
             AquaGuard
           </Heading>
+          <Heading as="h2" size="xl" noOfLines={1}>
+          We empower all individuals with the data and tangible insights to safeguard their local water sources regardless of their location from the palm of their hands.
+          </Heading>
         </div>
       </div>
     </div>
