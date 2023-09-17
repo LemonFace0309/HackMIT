@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ReactMap, {
   GeolocateControl,
   FullscreenControl,
   Marker,
   NavigationControl,
   ScaleControl,
+  MapRef,
 } from "react-map-gl";
 
+import { ControlPanel } from "@/components/control-panel";
 import { SlideOver } from "@/components/slide-over";
 import { Pin } from "@/components/pin";
-import { Coordinate } from "@/types";
+import { Bounty, Coordinate } from "@/types";
 
 export function Map() {
+  const mapRef = useRef<MapRef>(null);
   const [selectedCord, setSelectedCord] = useState<Coordinate | null>(null);
   const [viewState, setViewState] = useState({
     latitude: 42.3601,
@@ -19,8 +22,15 @@ export function Map() {
     zoom: 14,
   });
 
+  const onSelectBounty = ({ longitude, latitude }: Bounty) => {
+    mapRef.current?.flyTo({
+      center: [longitude, latitude],
+      zoom: 18,
+      duration: 2000,
+    });
+  };
+
   const onClick = (event: mapboxgl.MapLayerMouseEvent) => {
-    console.log("Point selected:", event);
     if (selectedCord) {
       setSelectedCord(null);
       return;
@@ -31,6 +41,7 @@ export function Map() {
   return (
     <div className="relative w-full h-full">
       <ReactMap
+        ref={mapRef}
         {...viewState}
         reuseMaps
         style={{ height: "100%", width: "100%" }}
@@ -52,6 +63,7 @@ export function Map() {
         )}
       </ReactMap>
       <SlideOver coord={selectedCord} onClose={() => setSelectedCord(null)} />
+      <ControlPanel onSelectBounty={onSelectBounty} />
     </div>
   );
 }
