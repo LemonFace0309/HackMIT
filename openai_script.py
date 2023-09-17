@@ -27,8 +27,8 @@ Format the output in json with the following water quality metrics of:
 4. Bioindicators, 
 5. Water Color, 
 6. Presence of Algae, 
-7. 3 Implictions of water quality (on wildlife, on human population, other stakeholders), 
-8. 3 Recommendations to improve water quality.
+7. Array of 3 Implictions of water quality (on wildlife, on human population, other stakeholders), 
+8. Array of 3 Recommendations to improve water quality.
 """
 
 response = openai.ChatCompletion.create(
