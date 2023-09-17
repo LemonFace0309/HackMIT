@@ -4,18 +4,10 @@ import {
   Box,
   Button,
   ButtonGroup,
-  Flex,
-  Grid,
   Heading,
-  Icon,
   IconButton,
-  Image,
   Input,
-  ListItem,
   Text,
-  UnorderedList,
-  chakra,
-  useToken,
 } from "@chakra-ui/react";
 import { cloneElement, useRef, useState } from "react";
 
@@ -23,7 +15,6 @@ import { Coordinate, WaterData } from "@/types";
 import { Recommendations } from "./recommendations";
 import axios from "axios";
 import { formatCoordinate } from "@/utils/format-coordinate";
-import waterData from "../data/water.json";
 
 type SlideOverProps = {
   coord: Coordinate | null;
@@ -33,12 +24,12 @@ type SlideOverProps = {
 export function SlideOver({ coord, onClose }: SlideOverProps) {
   const fileUploadRef = useRef<HTMLInputElement>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [waterData, setWaterData] = useState<WaterData | null>(null);
   const variant = coord ? "open" : "closed";
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
   };
-  const recommendations: string[] = [];
 
   const uploadImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
@@ -58,6 +49,8 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
           "Content-Type": "multipart/form-data",
         },
       });
+
+      setWaterData(response.data.data);
 
       console.log("Upload successful:", response.data);
     } catch (error) {
@@ -106,10 +99,6 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
                   {formatCoordinate(coord.lat, "E", "W")}
                 </b>
               </Text>
-              {/* <Text>
-                📆 Data from <b>{curHotspot.minTime}</b> to{" "}
-                <b>{curHotspot.maxTime}</b>
-              </Text> */}
 
               <ButtonGroup
                 colorScheme="teal"
@@ -135,16 +124,8 @@ export function SlideOver({ coord, onClose }: SlideOverProps) {
               <Heading as="h2" fontSize="3xl" mt={4}>
                 Recommendations
               </Heading>
-              <Recommendations waterData={waterData[0] as WaterData} />
-              <UnorderedList>
-                {recommendations.map((rec, i) => {
-                  return (
-                    <ListItem mt={4} key={i}>
-                      {rec}
-                    </ListItem>
-                  );
-                })}
-              </UnorderedList>
+              {/* Todo: Replace null with loading state */}
+              {waterData && <Recommendations waterData={waterData} />}
             </Box>
           )}
         </Box>

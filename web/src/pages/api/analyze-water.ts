@@ -4,6 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
 
 import { WaterData } from "@/types";
+import { sleep } from "@/utils/sleep";
 
 export const config = {
   api: {
@@ -40,13 +41,15 @@ export default async function handler(
   );
 
   let data = allWaterData.find(
-    (item: WaterData) => item.name === image!.originalFilename
+    (item: WaterData) => item.Name === image!.originalFilename
   );
 
   if (!data) {
     // TODO(William): Add node script here to process and return results
-    data = {}; // todo
+    data = null; // todo
   }
+
+  await sleep(5000);
 
   res.status(200).json({ data });
 }

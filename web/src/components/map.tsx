@@ -7,7 +7,6 @@ import ReactMap, {
   ScaleControl,
 } from "react-map-gl";
 
-import { DrawControl } from "@/components/draw-controls";
 import { SlideOver } from "@/components/slide-over";
 import { Pin } from "@/components/pin";
 import { Coordinate } from "@/types";
