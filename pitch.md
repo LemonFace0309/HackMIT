@@ -165,12 +165,12 @@ https://github.com/LemonFace0309/HackMIT/assets/25058545/99e8d59a-c369-478d-8d03
 ---
 
 ## Next steps: 
-- add wildlife data 
-- add natural distaster event data
-- train a specific model for water quality analysis based on satellite or camera imagery.
-- provide localized resources
+- Add wildlife data 
+- Add natural distaster event data
+- Train a fine-tuned image recognition model for water quality analysis based on satellite or camera imagery.
+- Gallery support for crowd sourced imagery over time and water monitoring over time
+- Provide localized resources & recommendations
 - Ensure that the location data, especially from individual users, is anonymized and secure. Users might be hesitant to use the app if they feel their data could be misused.
-
 ---
 
 **Closing:**
