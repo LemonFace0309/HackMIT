@@ -55,5 +55,43 @@
         "Regular monitoring of water quality to keep track of changes and implement measures accordingly",
         "Public education on the importance of proper waste disposal and reduction of nutrient run-off into local water bodies"
     ]
-    }
+    },
+    {
+      "Name": "fish.jpg",
+      "Score out of 10": 8,
+      "Explanation for score": "The water appears to be fairly clear with visible contents. There is no observable algae or pollutants on the surface. However, we can't completely ascertain if there could be unseen contaminants.", 
+      "Water Clarity": "High clarity, depth contents of the water are visible.",
+      "Bioindicators": "Fish are seen swimming indicating the water quality might be suitable for aquatic life.",
+      "Water Color": "The water is a clear-blue color, which is typical for healthy water bodies.",
+      "Presence of Algae": "No visible algae seen from image.",
+      "Implications of water quality": [
+        "Wildlife: The presence of fish indicates potential healthy ecosystem, however more investigation needed for conclusive implications.",
+        "Human Population: Assuming no unseen contaminants, this water could be used for recreational purposes with little harm to human health.",
+        "Other Stakeholders: Local government agencies would be interested in maintaining this water quality for balancing ecosystem and recreational usage."
+      ],
+      "Recommendations to improve water quality": [
+        "Regular Monitoring: It's advised to regularly monitor the water conditions and check for any changes in the wildlife or growth of vegetation.",
+        "Cleanup Routines: Any visible pollutants should be cleaned up to maintain the water clarity and ensure the health of the aquatic life.",
+        "Water Testing for unseen contaminants: Although the water appears clear, testing for chemicals, bacteria or other unseen contaminants is recommended to ensure water quality."
+      ]
+     },
+     {
+      "Name": "muddy.jpg",
+      "Score out of 10": 2,
+      "Explanation for score": "The water appears cloudy with silt, and appears to be greenish in color which suggests a high presence of algae, reducing the clarity of the water. The mud particles also indicate poor water quality.",
+      "Water Clarity": "Poor - the water is murky and visibility seems low.",
+      "Bioindicators": "The green color of the water might suggest the presence of algae. No other bioindicators visible in the image.",
+      "Water Color": "The water appears to be greenish-brown due to apparent high concentrations of algae and silt.",
+      "Presence of Algae": "High - the green colour suggests a high presence of algae.",
+      "Implications of water quality": [
+        "Wildlife: High presence of algae can deprive the water of oxygen, hampering aquatic life.",
+        "Human population: Such water is unsafe for consumption as it can cause diseases. The sight of dirty water can also decrease property value.",
+        "Other stakeholders: Farmers and industries that rely on water for their operations can be negatively affected by the poor quality of the water."
+      ],
+      "Recommendations to improve water quality": [
+        "Install sedimentation ponds or wetlands to allow silt and other particles to settle out of the water.",
+        "Prevent agricultural runoff that can cause algal blooms.",
+        "Implement strategies for regular clean-up efforts to improve the aesthetic and actual cleanliness of the water."
+      ]
+      }
 ]
