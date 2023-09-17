@@ -1,8 +1,8 @@
-🌊 **AquaGuard - HackMIT** 🌊
+# 🌊 **AquaGuard - HackMIT** 🌊
 
 AquaGuard: Harnessing AI-powered satellite analytics to democratize real-time water quality insights, transforming communities into proactive guardians for a resilient and sustainable aquatic ecosystem
 
-TL;DR
+### TLDR:
 
 1. Water degradation affects millions globally, yet vast water bodies remain unmonitored due to inadequate resources.
 2. AquaGuard integrates satellite and crowdsourced imagery with localized wildlife and human data to give an in-depth analysis of water quality.
